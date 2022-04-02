@@ -29,3 +29,17 @@ export type ContactSection = {
         body:string
     }[]
 }
+
+export type AboutData = {
+    carouselData:CarouselData
+}
+
+export type CarouselData = {
+    entries:CarouselEntry[];
+}
+
+export type CarouselEntry = {
+    img: string,
+    labelTitle:string,
+    labelBody:string
+}

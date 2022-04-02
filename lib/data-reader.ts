@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { IndexData } from './types/data-types'
+import { AboutData, IndexData } from './types/data-types'
 
 const dataDirectory:string = path.join(process.cwd(), "data")
 
@@ -13,4 +13,10 @@ function readJson(fileName:string):any {
 export function getIndexData():IndexData {
   const indexData:IndexData = readJson("index-data");
   return indexData;
+}
+
+
+export function getAboutData():AboutData {
+  const aboutData:AboutData = readJson("about-data");
+  return aboutData;
 }
