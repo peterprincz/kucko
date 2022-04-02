@@ -1,14 +1,22 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
+import type { GetStaticProps, NextPage } from 'next'
+import React  from 'react'
 import { useRef } from 'react'
 import AboutSection from '../components/about-section'
 import ContactSection from '../components/contact-sections'
 import DetailsSection from '../components/details-section'
-import Footer from '../components/footer'
-import NavBar from '../components/navbar'
+import Layout from '../components/layout'
+import { getIndexData } from '../lib/data-reader'
+import { IndexData } from '../lib/types/data-types'
 
-const Home: NextPage = () => {
+export const getStaticProps: GetStaticProps = async(context) => {
+
+  return {
+    props: getIndexData()
+  }
+}
+
+
+const Home: NextPage<IndexData> = (indexContent:IndexData) => {
 
   const detailsRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
   const contactRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
@@ -25,27 +33,17 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div>
-      <div className="flex min-h-screen flex-col items-center justify-center py-2">
-        <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <NavBar activePageIndex={0} />
-        <main className="flex w-full flex-1 flex-col items-center justify-center mx-5 md:mx-20">
-          <div className="flex w-full bg-blue-300" >
-            <AboutSection scrollOne={scrollToContact} scrollTwo={scrollToDetails} />
+    <Layout title='Kezdőlap' activePageIndex={0}>
+          <div className="flex w-full bg-blue-300">
+            <AboutSection scrollOne={scrollToContact} scrollTwo={scrollToDetails} content={indexContent.aboutSection} />
           </div>
           <div className="flex w-full bg-blue-300">
-            <DetailsSection selfRef={detailsRef} />
+            <DetailsSection selfRef={detailsRef} content={indexContent.detailsSection}/>
           </div>
           <div className="flex w-full bg-blue-300">
-            <ContactSection selfRef={contactRef} />
+            <ContactSection selfRef={contactRef}  content={indexContent.contactSection}/>
           </div>
-        </main>
-        <Footer />
-      </div>
-    </div>
+    </Layout>
   )
 }
 

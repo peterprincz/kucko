@@ -19,7 +19,7 @@ module.exports = {
                 fadeInFromLeft: {
                     "0%": {
                         opacity: 0,
-                        transform: "translateX(-20px)"
+                        transform: "translateX(-40px)"
                     },
                     "100%": {
                         opacity: 1,
@@ -29,7 +29,7 @@ module.exports = {
                 fadeInFromRight: {
                     "0%": {
                         opacity: 0,
-                        transform: "translateX(20px)"
+                        transform: "translateX(40px)"
                     },
                     "100%": {
                         opacity: 1,

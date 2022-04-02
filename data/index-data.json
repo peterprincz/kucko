@@ -1,0 +1,47 @@
+{
+    "aboutSection": {
+        "titleTop": "Miben tudok",
+        "titleBottom": "Segíteni",
+        "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        ],
+        "image": "https://static.wixstatic.com/media/aab78a_b854a766f50242a695e45a5585c23fc3~mv2.jpg/v1/fill/w_319,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/image0_edited.jpg"
+    },
+    "detailsSection": {
+        "titleTop": "MIKET",
+        "titleBottom": "AJÁNLOK?",
+        "paragraphs": [{
+                "title": "title",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "title",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "title",
+                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        ],
+        "image": "https://www.tailwind-kit.com/images/object/8.jpg"
+    },
+    "contactSection": {
+        "titleTop": "ITT",
+        "titleBottom": "ELÉRSZ",
+        "contactData": [{
+                "title": "facebook",
+                "body": "Facebook ide"
+            },
+            {
+                "title": "Email",
+                "body": "Email ide"
+            },
+            {
+                "title": "Telefon",
+                "body": "Telefon ide"
+            }
+        ]
+    }
+}
