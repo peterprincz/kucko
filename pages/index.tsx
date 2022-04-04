@@ -33,26 +33,6 @@ const Home: NextPage<IndexData> = (indexContent: IndexData) => {
       detailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
     }
   };
-
-  const data: CarouselData = {
-    entries: [{
-      img: "https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg",
-      labelTitle: "First slide label",
-      labelBody: "Some representative placeholder content for the first slide"
-    },
-    {
-      img: "https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg",
-      labelTitle: "First slide label",
-      labelBody: "Some representative placeholder content for the first slide"
-    },
-    {
-      img: "https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg",
-      labelTitle: "First slide label",
-      labelBody: "Some representative placeholder content for the first slide"
-    }
-    ]
-  }
-
   
   return (
     <Layout title='Kezdőlap' activePageIndex={0}>

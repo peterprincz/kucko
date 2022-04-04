@@ -1,31 +1,36 @@
 {
     "aboutSection": {
-        "titleTop": "Miben tudok",
-        "titleBottom": "Segíteni",
+        "titleTop": "GERMEK és IFJÚSÁGI",
+        "titleBottom": "Coaching",
         "paragraphs": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "A coaching, a coach és az ügyfél között módszertani eszközök felhasználásával zajló, beszélgetési folyamat, melyben az ügyfél találja meg saját részére a legjobb megoldási alternatívákat. A coach és az ügyfél kapcsolata a bizalomra épül, és a titoktartás jellemzi.",
+            "A coaching folyamatot a jövőorientáltság jellemzi. Nem a múlt sérelmeit boncolgatja. A munka a jelenben folyik. A cél a problémák és konfliktusok megszűntetése, és a megoldások gyors elősegítése „itt és most”.",
+            "A coach abban segít, hogy az ügyfél végig tudjon menni a sajátmaga által fontosnak tartott, az úgynevezett „változás útján”. Képes legyen döntést hozni, éselérje a kitűzött céljait úgy, hogy közben mindvégig támogatja őt a coach.",
+            "A coach soha nem dolgozik az ügyfél helyett, hanem partnerként maximálisan támogatja őt a folyamatában, tiszteletben tartva annak döntéseit. Nem kínál kész megoldásokat, hanem figyelembe véve az ügyfél egyéni adottságait, tulajdonságait, belső erőforrásait, maximális figyelemmel, odafordulással, empátiával segít, valamint a folyamat során kérdésekkel, visszajelzésekkel, educatióval igyekszik utat mutatni és támogatni a fejlődést."
         ],
-        "image": "https://static.wixstatic.com/media/aab78a_b854a766f50242a695e45a5585c23fc3~mv2.jpg/v1/fill/w_319,h_319,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/image0_edited.jpg"
+        "image": "images/1.jpg"
     },
     "detailsSection": {
-        "titleTop": "MIKET",
-        "titleBottom": "AJÁNLOK?",
+        "titleTop": "MIKOR ÉRDEMES",
+        "titleBottom": "IGÉNYBE VENNI?",
         "paragraphs": [{
-                "title": "title",
-                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body": "Ha kommunikációs nehézségek vannak (veszekedések, konfliktusok..),",
+                "title": "Kommunikáció"
             },
             {
-                "title": "title",
-                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body": "Ha hisztizik a gyermek, vagy éppen túlérzékeny, düh és harag kezelés esetén,",
+                "title": "hiszti"
             },
             {
-                "title": "title",
-                "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body": "Ha beilleszkedési nehézségekkel küzd (megszegi a szabályokat, agresszív,..),",
+                "title": "beilleszkedls"
+            },
+            {
+                "body": "Ha motiváció hiánya merül fel (figyelemzavar, tanulási nehézségek, lustaság..),",
+                "title": "motiváció"
             }
         ],
-        "image": "https://www.tailwind-kit.com/images/object/8.jpg"
+        "image": "images/2.jpg"
     },
     "contactSection": {
         "titleTop": "ITT",
