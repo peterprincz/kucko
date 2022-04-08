@@ -1,7 +1,7 @@
 {
     "aboutSection": {
-        "titleTop": "GERMEK és IFJÚSÁGI",
-        "titleBottom": "Coaching",
+        "titleTop": "Coaching",
+        "titleBottom": "",
         "paragraphs": [
             "A coaching, a coach és az ügyfél között módszertani eszközök felhasználásával zajló, beszélgetési folyamat, melyben az ügyfél találja meg saját részére a legjobb megoldási alternatívákat. A coach és az ügyfél kapcsolata a bizalomra épül, és a titoktartás jellemzi.",
             "A coaching folyamatot a jövőorientáltság jellemzi. Nem a múlt sérelmeit boncolgatja. A munka a jelenben folyik. A cél a problémák és konfliktusok megszűntetése, és a megoldások gyors elősegítése „itt és most”.",
@@ -11,8 +11,8 @@
         "image": "images/1.jpg"
     },
     "detailsSection": {
-        "titleTop": "MIKOR ÉRDEMES",
-        "titleBottom": "IGÉNYBE VENNI?",
+        "titleTop": "MIKBE TUDNI",
+        "titleBottom": "SEGITENI?",
         "paragraphs": [{
                 "body": "Ha kommunikációs nehézségek vannak (veszekedések, konfliktusok..),",
                 "title": "Kommunikáció"

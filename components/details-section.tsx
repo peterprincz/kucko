@@ -35,8 +35,8 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
             <li key={i} className="mt-10">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md  bg-pink-400 text-white">
-                    {i}
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full  bg-pink-400 text-white">
+                    
                   </div>
                 </div>
                 <div className="ml-4">

@@ -7,7 +7,7 @@ const Carousel: FC<{ images: CarouselEntry[] }> = ({ images, children }) => {
     console.log(images)
 
     return (
-        <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" className="carousel slide relative flex-column" data-bs-ride="carousel">
             <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                 {images.map((image, i) => {
                     if (i == 0) {
@@ -54,7 +54,7 @@ const Carousel: FC<{ images: CarouselEntry[] }> = ({ images, children }) => {
                             <div className="carousel-item relative float-left w-full">
                                 <img
                                     src={image.img}
-                                    className="block w-full"
+                                    className="block w-full h-full"
                                     alt="..."
                                 />
                                 <div className="carousel-caption hidden md:block absolute text-center">

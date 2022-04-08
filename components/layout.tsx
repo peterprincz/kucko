@@ -16,7 +16,7 @@ const Layout: FC<{ title: string, activePageIndex: number }> = ({ children, titl
                 <title>{title}</title>
             </Head>
             <NavBar activePageIndex={activePageIndex} />
-            <main className="flex w-full flex-1 flex-col items-center justify-center scroll-smooth">
+            <main className="flex w-full min-h-screen flex-1 flex-col items-center justify-center scroll-smooth min-h-[83vh]">
                 {children}
             </main>
             <Footer />

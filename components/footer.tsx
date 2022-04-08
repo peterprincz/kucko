@@ -6,7 +6,7 @@ const Footer: FC = () => {
     
 
     return (
-        <footer className="bg-white dark:bg-gray-800 w-full py-8 shadow-inner">
+        <footer className="bg-white dark:bg-gray-800 w-full py-8 shadow-inner h-[10vh]">
             <div className="max-w-screen-xl mx-auto px-4">
                 <ul className="max-w-screen-md mx-auto text-lg font-light flex flex-wrap justify-around">
                     <li className="my-2">
