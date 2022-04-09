@@ -29,6 +29,21 @@
             }
         ]
     },
+    "competencies": [
+        "ELTE Tanító- és Óvóképző Főiskola Karán - Óvodapedagógus szak",
+        "Budapesti Műszaki és Gazdaságtudományi Egyetem Gazdaság- és Társadalomtudományi Karán – Szakvizsgázott pedagógus, közoktatási vezető",
+        "Budapesti Műszaki és Gazdaságtudományi Egyetem Gazdaság- és Társadalomtudományi Karán – Szakvizsgázott pedagógus, mentorpedagógus szakterületen",
+        "Újrahangolás Központ: TA módszertan",
+        "Újrahangolás Központ: Elengedés felsőfokon",
+        "Újrahangolás Központ: Gyermek és Ifjúsági coach",
+        "Újrahangolás Központ: Gyermek és Ifjúsági VMI módszerspecifikus képzés",
+        "Újrahangolás Központ: Sorskönyvi újraírás",
+        "Újrahangolás Központ: Saját gyermekkor újraírás",
+        "Újrahangolás Központ: Integrált testtudatosság vizualizációval",
+        "Újrahangolás Központ: Újrahangolás Konzulens (folyamatban)",
+        "Újrahangolás Központ: Újrahangolás alkalmazó gyermek és ifjúsági szellemi- lelki coach újrahangolás konzulens (folyamatban)"
+
+    ],
     "workParagraphs": [
         {
             "title":"MIÉRT VÁLASSZON ENGEM A SEGÍTŐI ÚT FOLYAMÁN",
@@ -45,23 +60,23 @@
     ],
     "workCarouselData": {
         "entries": [{
-                "img": "/images/13.jpg",
-                "imgWidth": "482",
-                "imgHeight": "718",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
-            },
-            {
                 "img": "/images/14.jpg",
-                "imgWidth": "482",
-                "imgHeight": "718",
+                "imgWidth": "718",
+                "imgHeight": "482",
                 "labelTitle": "First slide label",
                 "labelBody": "Some representative placeholder content for the first slide"
             },
             {
                 "img": "/images/15.jpg",
-                "imgWidth": "482",
-                "imgHeight": "718",
+                "imgWidth": "718",
+                "imgHeight": "482",
+                "labelTitle": "First slide label",
+                "labelBody": "Some representative placeholder content for the first slide"
+            },
+            {
+                "img": "/images/16.jpg",
+                "imgWidth": "718",
+                "imgHeight": "482",
                 "labelTitle": "First slide label",
                 "labelBody": "Some representative placeholder content for the first slide"
             }

@@ -20,11 +20,11 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
   });
 
   return (
-    <div className="container mx-auto px-3 md:px-6 lg:px-48 py:3 md:py-24 lg:py-20 flex py-16 max-w-full bg-red-200 min-h-screen">
+    <div className="container flex mx-auto px-3 md:px-6 lg:px-48 py:3 md:py-24 lg:py-20 flex py-16 max-w-full bg-secondary min-h-screen">
       <div className={sectionImageStyle}>
         <Image src={content.image} layout="intrinsic" width={1080} height={1482} className="mr-auto" />
       </div>
-      <div className={sectionContentStyle + " animate-fadeInFromRight opacity-0"} ref={selfRef} >
+      <div className={sectionContentStyle + " animate-fadeInFromRight opacity-0 flex items-center"} ref={selfRef} >
         <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none text-gray-800">
           {content.titleTop}
           <span className="text-5xl sm:text-4xl">
@@ -37,7 +37,7 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
             <li key={i} className="mt-10">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full  bg-pink-400 text-white">
+                  <div className="flex items-center justify-center h-8 w-8 rounded-full  bg-interactive text-white">
                     
                   </div>
                 </div>

@@ -11,7 +11,7 @@
         "image": "/images/1.jpg"
     },
     "detailsSection": {
-        "titleTop": "MIKBE TUDNI",
+        "titleTop": "MIKBEN TUDOK",
         "titleBottom": "SEGITENI?",
         "paragraphs": [{
                 "body": "Ha kommunikációs nehézségek vannak (veszekedések, konfliktusok..),",
@@ -24,6 +24,14 @@
             {
                 "body": "Ha beilleszkedési nehézségekkel küzd (megszegi a szabályokat, agresszív,..),",
                 "title": "beilleszkedls"
+            },
+            {
+                "body": "Ha motiváció hiánya merül fel (figyelemzavar, tanulási nehézségek, lustaság..),",
+                "title": "motiváció"
+            },
+            {
+                "body": "Ha motiváció hiánya merül fel (figyelemzavar, tanulási nehézségek, lustaság..),",
+                "title": "motiváció"
             },
             {
                 "body": "Ha motiváció hiánya merül fel (figyelemzavar, tanulási nehézségek, lustaság..),",

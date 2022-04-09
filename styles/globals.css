@@ -7,5 +7,60 @@ body {
     font-size: 110%;
 }
 
+
+/*
+rgb(56,144,143)
+rgb(178,235,224)
+rgb(94,150,174)
+rgb(255,191,163)
+rgb(224,137,99)
+rgb(42, 217, 207)
+*/
+
+
+:root {
+    --tw-bg-opacity: 0.7;
+    --tw-border-opacity: 0.7;
+    --tw-white: 255 255 255;
+    --tw-primary: 178 235 224;
+    --tw-secondary: 255 191 163;
+    --tw-interactive: 56 144 143;
+    --tw-active: 42 217 207;
+}
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+    .bg-white {
+        background-color: rgb(var(--tw-white) / var(--tw-bg-opacity));
+    }
+    .bg-primary {
+        background-color: rgb(var(--tw-primary) / var(--tw-bg-opacity));
+    }
+    .bg-secondary {
+        background-color: rgb(var(--tw-secondary) / var(--tw-bg-opacity));
+    }
+    .bg-interactive {
+        background-color: rgb(var(--tw-interactive) / var(--tw-bg-opacity));
+    }
+    .bg-active {
+        background-color: rgb(var(--tw-active) / var(--tw-bg-opacity));
+    }
+    .button-interactive {
+        background-color: rgb(var(--tw-interactive));
+    }
+    .text-active {
+        color: rgb(var(--tw-active) / var(--tw-bg-opacity));
+    }
+    .text-interactive {
+        color: rgb(var(--tw-interactive) / var(--tw-bg-opacity));
+    }
+    .border-active {
+        border-color: rgb(var(--tw-active) / var(--tw-border-opacity));
+    }
+    .button-active {
+        background-color: rgb(var(--tw-active));
+    }
+    .filter-grayscale {
+      filter: grayscale(100%);
+    }
+}

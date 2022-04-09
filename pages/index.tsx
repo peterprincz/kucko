@@ -35,13 +35,13 @@ const Home: NextPage<IndexData> = (indexContent: IndexData) => {
   
   return (
     <Layout title='Kezdőlap' activePageIndex={0}>
-      <div className="flex w-full bg-blue-300">
+      <div className="flex w-full">
         <AboutSection scrollOne={scrollToContact} scrollTwo={scrollToDetails} content={indexContent.aboutSection} />
       </div>
-      <div className="flex w-full bg-blue-300">
+      <div className="flex w-full">
         <DetailsSection selfRef={detailsRef} content={indexContent.detailsSection} />
       </div>
-      <div className="flex w-full bg-blue-300">
+      <div className="flex w-full">
         <ContactSection selfRef={contactRef} content={indexContent.contactSection} />
       </div>
     </Layout>

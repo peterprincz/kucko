@@ -9,10 +9,9 @@ const Carousel: FC<{ id:string, images: CarouselEntry[] }> = ({ id, images, chil
 
     //TODO should find the maximum width
     const maxWidth:number = images[0].imgWidth;
-    const containerStyle = "carousel slide relative flex-column w-[" + maxWidth + "px]"
-
+    const containerStyle = "carousel slide relative flex-column"
     return (
-        <div id={id} className={containerStyle} data-bs-ride="carousel">
+        <div id={id} className={containerStyle} style={{maxWidth: maxWidth + "px"}} data-bs-ride="carousel">
             <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                 {images.map((image, i) => {
                     if (i == 0) {

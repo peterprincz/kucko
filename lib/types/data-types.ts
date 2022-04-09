@@ -33,6 +33,7 @@ export type ContactSection = {
 export type AboutData = {
     introductionParagraphs: string[],
     introductionCarouselData:CarouselData
+    competencies:string[],
     workParagraphs: workParagraph[],
     workCarouselData:CarouselData
 }

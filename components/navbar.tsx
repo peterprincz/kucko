@@ -1,38 +1,50 @@
 import React, { FC, Props } from 'react'
+import Image from 'next/image'
 
 
-const NavBar: FC<{activePageIndex:number}> = ({children, activePageIndex}) => {
+const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) => {
 
-    const grayStyle = "text-gray-400  hover:text-gray-800  px-3 py-2 rounded-md font-medium transition-colors duration-200";
-    const activeStyle = "text-gray-800  hover:text-gray-800  px-3 py-2 rounded-md  font-medium";
+  const grayStyle = "hover:text-interactive px-3 py-2 rounded-md font-medium transition-colors duration-500";
+  const activeStyle = "text-active  px-3 py-2 rounded-md  font-medium";
 
-    return (
-        <nav className="w-full bg-white shadow sticky top-0 z-50 h-[7vh]">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center  h-16 w-full">
-            <div className=" flex items-center justify-center  w-full">
-            <div className="flex items-baseline space-x-4">
-                  <a className={activePageIndex === 0 ? activeStyle: grayStyle} href="/#">
-                    Főoldal
-                  </a>
-                  <a className={activePageIndex === 1 ? activeStyle: grayStyle} href="/about">
-                    Rólam
-                  </a>
-                  <a className={activePageIndex === 2 ? activeStyle: grayStyle} href="/#">
-                    Coaching
-                  </a>
-                  <a className={activePageIndex === 3 ? activeStyle: grayStyle} href="/#">
-                    Iskola előkészitő
-                  </a>
-                  <a className={activePageIndex === 4? activeStyle: grayStyle} href="/#">
-                    Kapcsolat
-                  </a>
-                </div>
+  return (
+    <nav className="w-full bg-white shadow sticky top-0 z-50 min-h-[7vh]">
+      <div>
+        <div className="flex items-center  justify-center h-16 w-full">
+          <div className=" flex items-center justify-center  overflow-x-auto w-100">
+            <div className="flex items-strech  max-w-full">
+              <div className='flex items-center'>
+                <a className={activePageIndex === 0 ? activeStyle : grayStyle} href="/#">
+                  Főoldal
+                </a>
+              </div>
+              <div className='flex items-center text-center'>
+                <a className={activePageIndex === 1 ? activeStyle : grayStyle} href="/about">
+                  Rólam
+                </a>
+              </div>
+              <div className='flex items-center text-center'>
+                <a className={activePageIndex === 2 ? activeStyle : grayStyle} href="/#">
+                  Coaching
+                </a>
+              </div>
+              <div className='flex items-center  text-center'>
+                <a className={activePageIndex === 3 ? activeStyle : grayStyle} href="/#">
+                  Iskola előkészitő
+                </a>
+              </div>
+              <div className='flex items-center text-center'>
+                <a className={activePageIndex === 4 ? activeStyle : grayStyle} href="/#">
+                  Kapcsolat
+                </a>
+              </div>
             </div>
           </div>
+
         </div>
-      </nav>
-    )
+      </div>
+    </nav>
+  )
 }
 
 export default NavBar
