@@ -31,7 +31,15 @@ export type ContactSection = {
 }
 
 export type AboutData = {
-    carouselData:CarouselData
+    introductionParagraphs: string[],
+    introductionCarouselData:CarouselData
+    workParagraphs: workParagraph[],
+    workCarouselData:CarouselData
+}
+
+export type workParagraph = {
+    title:string,
+    body:string
 }
 
 export type CarouselData = {
@@ -40,6 +48,8 @@ export type CarouselData = {
 
 export type CarouselEntry = {
     img: string,
+    imgWidth:number,
+    imgHeight:number,
     labelTitle:string,
     labelBody:string
 }

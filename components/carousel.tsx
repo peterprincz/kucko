@@ -1,20 +1,25 @@
 import React, { FC, Props } from 'react'
 import { CarouselEntry } from '../lib/types/data-types';
+import Image from 'next/image'
 
 
-const Carousel: FC<{ images: CarouselEntry[] }> = ({ images, children }) => {
 
-    console.log(images)
+const Carousel: FC<{ id:string, images: CarouselEntry[] }> = ({ id, images, children }) => {
+    
+
+    //TODO should find the maximum width
+    const maxWidth:number = images[0].imgWidth;
+    const containerStyle = "carousel slide relative flex-column w-[" + maxWidth + "px]"
 
     return (
-        <div id="carouselExampleCaptions" className="carousel slide relative flex-column" data-bs-ride="carousel">
+        <div id={id} className={containerStyle} data-bs-ride="carousel">
             <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
                 {images.map((image, i) => {
                     if (i == 0) {
                         return (
                             <button
                                 type="button"
-                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-target={"#" + id}
                                 data-bs-slide-to={i}
                                 key={i}
                                 className="active"
@@ -25,8 +30,9 @@ const Carousel: FC<{ images: CarouselEntry[] }> = ({ images, children }) => {
                     } else {
                         return (
                             <button
+                                key={i}
                                 type="button"
-                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-target={"#" + id}
                                 data-bs-slide-to={i}
                                 aria-label={"Slide " + i}
                             ></button>
@@ -40,7 +46,7 @@ const Carousel: FC<{ images: CarouselEntry[] }> = ({ images, children }) => {
                         return (
                             <div key={i} className="carousel-item active relative float-left w-full">
                                 <div className="relative overflow-hidden bg-no-repeat bg-cover" style={{ backgroundPosition: "50%" }}>
-                                    <img src={image.img} className="block w-full h-full" />
+                                    <Image src={image.img} height={image.imgHeight} width={image.imgWidth} className="block w-full h-full" />
                                     <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
                                 </div>
                                 <div className="carousel-caption hidden md:block absolute text-center">
@@ -51,9 +57,8 @@ const Carousel: FC<{ images: CarouselEntry[] }> = ({ images, children }) => {
                         )
                     } else {
                         return (
-                            <div className="carousel-item relative float-left w-full">
-                                <img
-                                    src={image.img}
+                            <div key={i} className="carousel-item relative float-left w-full">
+                                <Image src={image.img} height={image.imgHeight} width={image.imgWidth} 
                                     className="block w-full h-full"
                                     alt="..."
                                 />
@@ -70,7 +75,7 @@ const Carousel: FC<{ images: CarouselEntry[] }> = ({ images, children }) => {
             <button
                 className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target={"#" + id}
                 data-bs-slide="prev"
             >
                 <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
@@ -79,7 +84,7 @@ const Carousel: FC<{ images: CarouselEntry[] }> = ({ images, children }) => {
             <button
                 className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target={"#" + id}
                 data-bs-slide="next"
             >
                 <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>

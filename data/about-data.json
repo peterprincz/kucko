@@ -1,17 +1,67 @@
 {
-    "carouselData": {
+    "introductionParagraphs": [
+        "Alap végzettségemet tekintve óvodapedagógus vagyok. 22 évet töltöttem a pedagógusi pályán. Sok tapasztalatot szereztem, hogy megismerjem a gyermeki lelket, az elakadásokat, felismerjem a nehézségeket és a tanulási problémákat. Pár évvel ezelőtt részt vettem egy továbbképzésen melyet Redő Júlia tartott az EMK-ról (Együttműködő, Erőszakmentes Kommunikációról) és megismertette velünk a Kompátia- életkerekítő játékokat (közösségépítő és érzelmi intelligencia fejlesztő). Ezeket a játékokat gyermekek és felnőttek egyaránt használhatják családban, közösségekben (óvodában, iskolában, munkahelyen, akár otthon is) egyaránt. Minden szülő, így én is, a lehető legjobbat szeretné gyermekének. Két gyermek édesanyjaként számomra a legfontosabb az ő boldogságuk, és boldogulásuk.",
+        "Az EMK és Kompátia megismerése után elindultam egy úton, de folyamatosan kerestem a megoldást, hogyan is tudnék segíteni, és hogyan is tudnék mégtöbbet nyújtani, és ezt a coachingban találtam meg. A coaching képzés során a tanárunk többször elmondta, hogy minden coachnak megvan a maga személyes története. Olyan emberek vannak a coaching folyamatban Önök mellett, akik maguk is megvívták vagy éppen vívják saját csatáikat. Hosszú út, és méghosszabb történetek vannak a segítséget nyújtók mögött is, de pont ők azok az emberek, akik átérzik milyen nehéz segítséget kérni, milyen nehéz a legféltettebb gondolatainkról beszélni és megnyílni egy másik ember előtt. De éppen ezen tapasztalatok megélése, és megoldásai nélkül, nem lennének hiteles segítők.",
+        "A coaching nem csak tudásátadásról szól, hanem másfajta megközelítési módot is kínál a gyermekek és a szülők támogatásához. Mások fejlődése és boldogsága a legnemesebb ösztönzés/motiváció számomra. Folyamatos igényem van a tanulás és fejlődés iránt. Tudatosan figyelek a további ismeretszerzésre, soha nem érzem, hogy már eleget tudnék. Jelenleg is tanulok, hogy újabb és újabb ismeretekkel, és módszerekkel bővítsem tudásomat.",
+        "Örömömre szolgál, hogy a megszerzett tudásommal a hozzám forduló szülőket és gyermekeket segíteni tudom, valamint a változás folyamatában végig mellettük lehetek."
+    ],
+    "introductionCarouselData": {
         "entries": [{
-                "img": "https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg",
+                "img": "/images/10.jpg",
+                "imgWidth": "482",
+                "imgHeight": "718",
                 "labelTitle": "First slide label",
                 "labelBody": "Some representative placeholder content for the first slide"
             },
             {
-                "img": "https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg",
+                "img": "/images/11.jpg",
+                "imgWidth": "482",
+                "imgHeight": "718",
                 "labelTitle": "First slide label",
                 "labelBody": "Some representative placeholder content for the first slide"
             },
             {
-                "img": "https://mdbootstrap.com/img/Photos/Slides/img%20(123).jpg",
+                "img": "/images/12.jpg",
+                "imgWidth": "482",
+                "imgHeight": "718",
+                "labelTitle": "First slide label",
+                "labelBody": "Some representative placeholder content for the first slide"
+            }
+        ]
+    },
+    "workParagraphs": [
+        {
+            "title":"MIÉRT VÁLASSZON ENGEM A SEGÍTŐI ÚT FOLYAMÁN",
+            "body": "Ügyfeleim számára, személyre szabott egyéni támogatást nyújtok. Kölcsönös bizalomban (feltérképezzük) az adott elakadást, majd különböző módszerek segítségével az ügyfél, megtalálja a számára megfelelő megoldást. A folyamat során komoly önismeretre tehet szert, amely segít abban, hogy a későbbiek folyamán az elsajátított módszereket, képes legyen önállóan is alkalmazni. Nemcsak saját elakadásainál, hanem gyermeke számára is segítséget tud majd nyújtani."
+        },
+        {
+            "title":"MILYEN ESZKÖZÖKKEL DOLGOZOM",
+            "body": "A megtanult modellek és módszerek alkalmazásán túl, és a beszélgetéseken felül, korosztálynak megfelelően mesékkel, különböző fejlesztő társasjátékokkal, játékos feladatokkal, kérdés-cselekvési és erőforrás kártyákkal, tesztek kitöltésével, fényképes történetekkel és egyéb eszközökkel segítem a gyermekeket, fiatalokat és a szülőket is egyaránt."
+        },
+        {
+            "title":"HOGYAN DOLGOZOM",
+            "body": "Az első alkalommal átbeszéljük mi is az-az elakadás, probléma, amivel hozzám fordult. Amennyiben a komptenciáim körébe tartozik a probléma, valamint megvan a kölcsönös szimpátia és az ügyfél is úgy gondolja tudunk együtt dolgozni akkor elindulunk a változás útján."
+        }
+    ],
+    "workCarouselData": {
+        "entries": [{
+                "img": "/images/13.jpg",
+                "imgWidth": "482",
+                "imgHeight": "718",
+                "labelTitle": "First slide label",
+                "labelBody": "Some representative placeholder content for the first slide"
+            },
+            {
+                "img": "/images/14.jpg",
+                "imgWidth": "482",
+                "imgHeight": "718",
+                "labelTitle": "First slide label",
+                "labelBody": "Some representative placeholder content for the first slide"
+            },
+            {
+                "img": "/images/15.jpg",
+                "imgWidth": "482",
+                "imgHeight": "718",
                 "labelTitle": "First slide label",
                 "labelBody": "Some representative placeholder content for the first slide"
             }

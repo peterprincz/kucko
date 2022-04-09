@@ -2,12 +2,11 @@ import type { GetStaticProps, NextPage } from 'next'
 import React from 'react'
 import { useRef } from 'react'
 import AboutSection from '../components/about-section'
-import Carousel from '../components/carousel'
 import ContactSection from '../components/contact-sections'
 import DetailsSection from '../components/details-section'
 import Layout from '../components/layout'
 import { getIndexData } from '../lib/data-reader'
-import { CarouselData, IndexData } from '../lib/types/data-types'
+import { IndexData } from '../lib/types/data-types'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {

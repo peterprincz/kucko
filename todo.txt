@@ -1,0 +1,6 @@
+about page:
+    center 
+    professional competencies to json
+    second carousel images
+all:
+    background-colors to variables
