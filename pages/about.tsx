@@ -83,8 +83,8 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
       <div className='container max-w-full  mx-auto px-3 md:px-6 lg:px-20 bg-secondary hover:cursor-pointer'>
         <div className="h-16 flex items-center justify-center gap-10 cursor-pointer" onClick={toogleDropDown}>
           <h1 className="font-bebas-neue text-2xl sm:text-2 font-black flex flex-col  text-gray-800">SZAKMAI KOMPETENCIÁIM</h1>
-          <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center animate-bounce w-6 h-6 ">
-            <svg className={"transition-all duration-1000 " + (dropDownOpen ? "rotate-[270deg]" : "rotate-90")} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path d="m345.44 248.29l-194.29 194.28c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744l171.91-171.91-171.91-171.9c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.29 194.28c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373" transform="matrix(.03541-.00013.00013.03541 2.98 3.02)" fill="#000000" /></svg>
+          <div className={"rounded-full w-12 h-12 flex items-center justify-center w-12 h-12 " + (dropDownOpen ? ' ' : 'mt-2 animate-bounce')}>
+            <img src='/svg/arrow.svg' className={"transition-all " + (dropDownOpen ? "rotate-[270deg]": 'rotate-90')}></img>
           </div>
         </div>
 

@@ -57,6 +57,10 @@ rgb(42, 217, 207)
     .border-active {
         border-color: rgb(var(--tw-active) / var(--tw-border-opacity));
     }
+    .border-interactive {
+        border-color: rgb(var(--tw-interactive) / var(--tw-border-opacity));
+    }
+
     .button-active {
         background-color: rgb(var(--tw-active));
     }
