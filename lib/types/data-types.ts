@@ -54,3 +54,28 @@ export type CarouselEntry = {
     labelTitle:string,
     labelBody:string
 }
+
+export type CoachData = {
+    coachSection: CoachIntro,
+    childCoachingSection: CoachTypeSection,
+    teenagerCoachingSection: CoachTypeSection,
+    parentCoachingSection: CoachTypeSection,
+    cancellation: string
+}
+
+export type CoachIntro = {
+    title: string,
+    paragraphs: string[],
+    link:string
+} 
+
+export type CoachTypeSection = {
+    buttonName:string,
+    title:string,
+    introductionParagraphs: string[],
+    listTitle:string,
+    listItems:string[],
+    duration:string,
+    price:string,
+    priceDesc:string
+}   

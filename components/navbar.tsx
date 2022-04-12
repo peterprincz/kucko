@@ -31,7 +31,7 @@ const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) 
                 </a>
               </div>
               <div className={getNavDivStyle(2)}>
-                <a className={activePageIndex === 2 ? activeStyle : grayStyle} href="/#">
+                <a className={activePageIndex === 2 ? activeStyle : grayStyle} href="/coach">
                   Coaching
                 </a>
               </div>

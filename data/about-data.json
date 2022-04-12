@@ -26,6 +26,20 @@
                 "imgHeight": "718",
                 "labelTitle": "First slide label",
                 "labelBody": "Some representative placeholder content for the first slide"
+            },
+            {
+                "img": "/images/13.jpg",
+                "imgWidth": "482",
+                "imgHeight": "718",
+                "labelTitle": "First slide label",
+                "labelBody": "Some representative placeholder content for the first slide"
+            },
+            {
+                "img": "/images/14.jpg",
+                "imgWidth": "482",
+                "imgHeight": "718",
+                "labelTitle": "First slide label",
+                "labelBody": "Some representative placeholder content for the first slide"
             }
         ]
     },
@@ -44,29 +58,21 @@
         "Újrahangolás Központ: Újrahangolás alkalmazó gyermek és ifjúsági szellemi- lelki coach újrahangolás konzulens (folyamatban)"
 
     ],
-    "workParagraphs": [
-        {
-            "title":"MIÉRT VÁLASSZON ENGEM A SEGÍTŐI ÚT FOLYAMÁN",
+    "workParagraphs": [{
+            "title": "MIÉRT VÁLASSZON ENGEM A SEGÍTŐI ÚT FOLYAMÁN",
             "body": "Ügyfeleim számára, személyre szabott egyéni támogatást nyújtok. Kölcsönös bizalomban (feltérképezzük) az adott elakadást, majd különböző módszerek segítségével az ügyfél, megtalálja a számára megfelelő megoldást. A folyamat során komoly önismeretre tehet szert, amely segít abban, hogy a későbbiek folyamán az elsajátított módszereket, képes legyen önállóan is alkalmazni. Nemcsak saját elakadásainál, hanem gyermeke számára is segítséget tud majd nyújtani."
         },
         {
-            "title":"MILYEN ESZKÖZÖKKEL DOLGOZOM",
+            "title": "MILYEN ESZKÖZÖKKEL DOLGOZOM",
             "body": "A megtanult modellek és módszerek alkalmazásán túl, és a beszélgetéseken felül, korosztálynak megfelelően mesékkel, különböző fejlesztő társasjátékokkal, játékos feladatokkal, kérdés-cselekvési és erőforrás kártyákkal, tesztek kitöltésével, fényképes történetekkel és egyéb eszközökkel segítem a gyermekeket, fiatalokat és a szülőket is egyaránt."
         },
         {
-            "title":"HOGYAN DOLGOZOM",
+            "title": "HOGYAN DOLGOZOM",
             "body": "Az első alkalommal átbeszéljük mi is az-az elakadás, probléma, amivel hozzám fordult. Amennyiben a komptenciáim körébe tartozik a probléma, valamint megvan a kölcsönös szimpátia és az ügyfél is úgy gondolja tudunk együtt dolgozni akkor elindulunk a változás útján."
         }
     ],
     "workCarouselData": {
         "entries": [{
-                "img": "/images/14.jpg",
-                "imgWidth": "718",
-                "imgHeight": "482",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
-            },
-            {
                 "img": "/images/15.jpg",
                 "imgWidth": "718",
                 "imgHeight": "482",
@@ -75,6 +81,13 @@
             },
             {
                 "img": "/images/16.jpg",
+                "imgWidth": "718",
+                "imgHeight": "482",
+                "labelTitle": "First slide label",
+                "labelBody": "Some representative placeholder content for the first slide"
+            },
+            {
+                "img": "/images/17.jpg",
                 "imgWidth": "718",
                 "imgHeight": "482",
                 "labelTitle": "First slide label",

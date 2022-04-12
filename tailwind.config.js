@@ -11,6 +11,7 @@ module.exports = {
                 fadeInFromLeft: "fadeInFromLeft 1s ease-in forwards",
                 fadeInFromRight: "fadeInFromRight 1s ease-in forwards",
                 fadeInFromBottom: "fadeInFromBottom 1s ease-in forwards",
+                activeToInteractive: "activeToInteractive 6s linear infinite"
             },
             keyframes: {
                 fadeIn: {
@@ -45,6 +46,17 @@ module.exports = {
                     "100%": {
                         opacity: 1,
                         transform: "translateY(0)"
+                    }
+                },
+                activeToInteractive: {
+                    "0%": {
+                        backgroundColor: "rgb(var(--tw-interactive) / var(--tw-bg-opacity));"
+                    },
+                    "50%": {
+                        backgroundColor: "rgb(var(--tw-active) / var(--tw-bg-opacity));"
+                    },
+                    "100%": {
+                        backgroundColor: "rgb(var(--tw-interactive) / var(--tw-bg-opacity));"
                     }
                 }
             }

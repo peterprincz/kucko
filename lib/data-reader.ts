@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { AboutData, IndexData } from './types/data-types'
+import { AboutData, CoachData, IndexData } from './types/data-types'
 
 const dataDirectory:string = path.join(process.cwd(), "data")
 
@@ -19,4 +19,9 @@ export function getIndexData():IndexData {
 export function getAboutData():AboutData {
   const aboutData:AboutData = readJson("about-data");
   return aboutData;
+}
+
+export function getCoachData():CoachData {
+  const coachData:CoachData = readJson("coach-data");
+  return coachData;
 }

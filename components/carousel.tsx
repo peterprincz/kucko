@@ -45,8 +45,7 @@ const Carousel: FC<{ id:string, images: CarouselEntry[] }> = ({ id, images, chil
                         return (
                             <div key={i} className="carousel-item active relative float-left w-full">
                                 <div className="relative overflow-hidden bg-no-repeat bg-cover" style={{ backgroundPosition: "50%" }}>
-                                    <Image src={image.img} height={image.imgHeight} width={image.imgWidth} className="block w-full h-full" />
-                                    <div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed bg-black opacity-50"></div>
+                                    <Image src={image.img} height={image.imgHeight} width={image.imgWidth} priority={true} className="block w-full h-full " />
                                 </div>
                                 <div className="carousel-caption hidden md:block absolute text-center">
                                     <h5 className="text-xl">{image.labelTitle}</h5>
@@ -57,7 +56,7 @@ const Carousel: FC<{ id:string, images: CarouselEntry[] }> = ({ id, images, chil
                     } else {
                         return (
                             <div key={i} className="carousel-item relative float-left w-full">
-                                <Image src={image.img} height={image.imgHeight} width={image.imgWidth} 
+                                <Image src={image.img} height={image.imgHeight} priority={true} width={image.imgWidth} 
                                     className="block w-full h-full"
                                     alt="..."
                                 />

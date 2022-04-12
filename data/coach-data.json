@@ -1,0 +1,90 @@
+{
+    "coachSection": {
+        "title": "COACHING",
+        "paragraphs": [
+            "A coaching, a coach és az ügyfél között módszertani eszközök felhasználásával zajló, beszélgetési folyamat, melyben az ügyfél találja meg saját részére a legjobb megoldási alternatívákat.",
+            "A coach és az ügyfél kapcsolata a bizalomra épül, és a titoktartás jellemzi. A coaching folyamatot a jövőorientáltság jellemzi. Nem a múlt sérelmeit boncolgatja. A munka a jelenben folyik",
+            "A cél a problémák és konfliktusok megszűntetése, és a megoldások gyors elősegítése „itt és most”. A coach abban segít, hogy az ügyfél végig tudjon menni a saját maga által fontosnak tartott, az úgynevezett „változás útján”.",
+            "Képes legyen döntést hozni, és elérje a kitűzött céljait úgy, hogy közben mindvégig támogatja őt a coach. A coach soha nem dolgozik az ügyfél helyett, hanem partnerként maximálisan támogatja őt a folyamatában, tiszteletben tartva annak döntéseit. Nem kínál kész megoldásokat, hanem figyelembe véve az ügyfél egyéni adottságait, tulajdonságait, belső erőforrásait, maximális figyelemmel, odafordulással, empátiával segít, valamint a folyamat során kérdésekkel, visszajelzésekkel, educatióval igyekszik utat mutatni és támogatni a fejlődést.",
+            "Viszont fontosnak tartom leírni, hogy a coaching nem pszichoterápia, nem diagnosztizálok és nem folytatok gyógyító tevékenységet sem!",
+            "Az egészséges, de bizonyos nehézségekkel, elakadásokkal, problémákkal küzdő, vagy csak Önmagukat egyes területeken fejleszteni kívánó emberek segítése."
+        ],
+        "link": "https://hu.wikipedia.org/wiki/Coaching"
+    },
+    "childCoachingSection": {
+        "buttonName": "Gyermek",
+        "title": "Gyermek coaching",
+        "introductionParagraphs": ["A gyermek coaching, gyermekeknek 3 éves kortól 12 éves korig szóló, rendkívül színes és változatos eszköztár segítségével (játékok, mesék, beszélgetések alkalmazásával), a gyermekek saját erőforrásaira épülő támogató, fejlesztő tevékenység."],
+        "listTitle": "MILYEN ESETEKBEN ÉRDEMES IGÉNYBE VENNI A GYEREK COACHINGOT?",
+        "listItems": [
+            "Ha kommunikációs nehézségek vannak (veszekedések, konfliktusok..)",
+            "Ha hisztizik a gyermek, vagy éppen túlérzékeny, düh és harag kezelés esetén",
+            "Ha beilleszkedési nehézségekkel küzd (megszegi a szabályokat, agresszív,..)",
+            "Ha  motiváció hiánya merül fel (figyelemzavar, tanulási nehézségek, lustaság..)",
+            "Ha önbizalomhiányos (zárkózott, befelé fordulás..)",
+            "Ha a társas kapcsolatok terén zavart észlelünk (testvér féltékenység, ellenséges viselkedés, kiközösítés, konfliktusok a közösségben, családban..)",
+            "Ha nehéz élethelyzetek merülnek fel (válás, költözés, trauma..)",
+            "Ha véleménykülönbség van nevelés terén, vagy elvált szülők esetében nehezen értik meg egymást.",
+            "Ha a gyermek szorong, nyugtalan, fél (felsír, rosszul alszik, vagy egyáltalán nem alszik, esetleg bepisil, fél a sötétben, fél az elalvástól, vagy csak valamitől..)",
+            "Ha esetleg kedvetlen, lehangolt",
+            "Ha a szülő szeretne javítani a gyermekével lévé kapcsolatán, jobb kommunikációt szeretne gyermekével",
+            "Ha a saját reakcióit szeretné megérteni…"
+        ],
+        "duration": "45 perc",
+        "price": "10.000 Ft.",
+        "priceDesc": "Az első konzultáció ingyenes. "
+    },
+    "teenagerCoachingSection": {
+        "buttonName": "Kamasz",
+        "title": "KAMASZ COACHING (12 éves kortól – 18 éves korig)",
+        "introductionParagraphs": ["Coachként a célom, a kamasz segítése, elismerése, támogatása a felnőtté válás útján, valamint a saját erősségeinek megerősítése, és feltérképezése. Támogatom abban őket, hogy megtalálják életcéljukat, fejlődő személyiségüket, önmagukat. Ez a támogatás pozitív hatással van a gyermek-szülő kapcsolatra. Az ülések alkalmával a fiatalok nyíltan, őszintén beszélhetnek legféltettebb titkaikról, érzéseikről."],
+        "listTitle": "MILYEN FELMERÜLŐ KÉRDÉSEKKEL FORDULHATNAK HOZZÁM?",
+        "listItems": [
+            "Nem működik a kommuniáció gyermek és szülő között.",
+            "Pályaválasztási dilemmákkal köszködik a gyermek, vagy felmerül az is, hogy mást szeretne a szülő és mást a gyermek.",
+            "Úgy érzi összezavarodtak az érzései.",
+            "Kiközösítést él meg, beilleszkedési problémái vannak.",
+            "Keresi helyét a világban, társadalomban.",
+            "Teljesítménykényszer tanulás, sport terén.",
+            "Kudarcélményektől retteg.",
+            "Nehezen viseli a vizsgahelyzeteket.",
+            "Saját céljait sosem helyezi előtérbe.",
+            "Boldogtalan, frusztrált, ingerült, hirtelen változik a hangulata, dühöng, csapkod, dühkitörései vannak, visszabeszél, rosszul teljesít, bezárkózik, nem mond igazat, a szabályokat megkérdőjelezi..",
+            "Kivonja magát a családi események alól (csak a barátaival akar lenni).",
+            "Vagy bezárkózik, otthon ülő típus (nincsenek barátai)."
+        ],
+        "duration": "60 perc",
+        "price": "11.500 Ft.",
+        "priceDesc": "Az első konzultáció ingyenes. "
+    },
+    "parentCoachingSection": {
+        "buttonName": "Felnött",
+        "title": "SZÜLŐKNEK, FELNŐTTEKNEK SZÓLÓ KONZULTÁCIÓK",
+        "introductionParagraphs": [
+            "Senki sem mondta, hogy könnyű szülőnek lenni. Minden szülő a lehető legjobbat szeretné gyermekének. A gyermekek tudatos nevelése rendkívül fontos, hiszen nem csak befolyásolja, de meg is határozza későbbi életüket és személyiségüket is. Ez maximálisan felelősségteljes és nehéz feladat. A harmónikus szülő-gyermek kapcsolat alapja a szeretet, a kölcsönös tisztelet, a bizalom, és a megfelelő családi légkör kialakítása. A szülők és gyermekek között szinte mindennaposak a kisebb-nagyobb konfliktusok. Sok olyan élethelyzet van, amikor a szülő tanácstalan, mivel is tenné a legjobbat gyermekének, mennyire legyen engedékeny illetve szigorú, vagy éppen hogyan is terelgesse a helyesnek vélt út felé.",
+            "A beszélgetések alkalmával olyan modelleket sajátíthat el a szülő, illetve felnőtt, amelyekkel, az élethelyzeteinek felismerésével, a saját elakadásain túl tud lendülni, valamint a későbbiek folyamán ezen modellek segítségével, képes lesz saját gyermekének is segítséget, iránymutatást nyújtani."
+        ],
+        "listTitle": "MILYEN ESETEKBEN FORDULHAT HOZZÁM SZÜLŐI, FELNŐTT KONZULTÁCIÓRA?",
+        "listItems": [
+            "Nehezen találja meg a közös hangot gyermekével.",
+            "Állandó harcok, játszmák helyett, együttműködésre, családi békére vágyódik.",
+            "„Jobb szülő” szeretne lenni.",
+            "Nem tudja megfelelően beosztani idejét.",
+            "Nehéz összeegyeztetni a karriert a családdal.",
+            "Ha változtatni szeretne, de nem tudja hogyan is kezdjen hozzá.",
+            "Nincs elég önbizalma a változtatáshoz.",
+            "Ha úgy érzi, minden teher csak az Ön vállára nehezedik.",
+            "Ha a felnőtt gyermek nem hajlandó az önállósodásra.",
+            "Ha a testvérek között féltékenység van.",
+            "Gondok merültek fel az iskolában a gyermekkel? Fél, visszahúzódó, nincsenek barátai? Esetleg verekszik? ",
+            "Gyomorgörccsel ébred, nem akar iskolába menni? Fél a dolgozatoktól?",
+            "Tanulási nehézségek merültek fel a gyermeknél, önbizalomhiányos",
+            "Mivel teszek jót a gyermekemnek?",
+            "Kamasz gyermeke van és tanácstalannak érzi magát?"
+        ],
+        "duration": "70-90 perc",
+        "price": "15.000 Ft.",
+        "priceDesc": "Az első konzultáció ingyenes. "
+    },
+    "cancellation": "A szülő felelőssége lemondani az ülést, amennyiben nem tud megjelenni a szülői konzultáción vagy gyermeke nem tud részt venni a coachingon, erről 48 órával az ülés időpontja előtt írásban (emailen) kérek tájékoztatást. Ha a lemondás 24 órán belül történik akkor az ülés díját ki kell fizetni. Ez alól a betegség miatt történő lemondás kivétel, melyet orvosi igazolás bemutatásával természetesen az ülés díját nem kell megfizetni."
+}
