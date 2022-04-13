@@ -2,14 +2,15 @@ import React, { FC, useEffect } from 'react'
 import { fadeInFromRight } from '../hooks/fades';
 import { DetailsSection } from '../lib/types/data-types';
 import Image from 'next/image'
+import LIMarker from './li-marker';
 
 
 
 const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: DetailsSection }> = ({ selfRef, content, children }) => {
 
 
-  const sectionContentStyle = "sm:w-1/3 md:w-2/5 lg:w-3/5 flex flex-col";
-  const sectionImageStyle = "hidden sm:block sm:w-2/3 md:w-3/5 lg:w-2/5 px-2";
+  const sectionContentStyle = "lg:w-3/5 flex flex-col";
+  const sectionImageStyle = "hidden lg:flex lg:w-2/5 px-2 items-center";
 
 
   useEffect(() => {
@@ -20,7 +21,7 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
   });
 
   return (
-    <div className="container flex mx-auto px-3 md:px-6 lg:px-48 py:3 md:py-24 lg:py-20 flex py-16 max-w-full bg-secondary min-h-screen">
+    <div className="container flex mx-auto px-3 md:px-2 lg:px-24 py:3 md:py-10 lg:py-15 max-w-full bg-secondary min-h-screen">
       <div className={sectionImageStyle}>
         <Image src={content.image} layout="intrinsic" width={1080} height={1482} className="mr-auto" />
       </div>
@@ -37,9 +38,7 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
             <li key={i} className="mt-10">
               <div className="flex">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-8 w-8 rounded-full  bg-active text-white">
-                    
-                  </div>
+                <LIMarker/>
                 </div>
                 <div className="ml-4">
                   <h5 className="text-lg leading-6 text-gray-900 font-bold">

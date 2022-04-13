@@ -17,7 +17,6 @@ rgb(224,137,99)
 rgb(42, 217, 207)
 */
 
-
 :root {
     --tw-bg-opacity: 0.7;
     --tw-border-opacity: 0.7;
@@ -27,6 +26,7 @@ rgb(42, 217, 207)
     --tw-interactive: 56 144 143;
     --tw-active: 42 217 207;
 }
+
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
@@ -60,11 +60,16 @@ rgb(42, 217, 207)
     .border-interactive {
         border-color: rgb(var(--tw-interactive) / var(--tw-border-opacity));
     }
-
     .button-active {
         background-color: rgb(var(--tw-active));
     }
     .filter-grayscale {
-      filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    .fill-primary {
+        fill: #c9f1e9;
+    }
+    .fill-secondary {
+        fill: #ffd2be;
     }
 }

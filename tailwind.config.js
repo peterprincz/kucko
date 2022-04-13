@@ -11,7 +11,8 @@ module.exports = {
                 fadeInFromLeft: "fadeInFromLeft 1s ease-in forwards",
                 fadeInFromRight: "fadeInFromRight 1s ease-in forwards",
                 fadeInFromBottom: "fadeInFromBottom 1s ease-in forwards",
-                activeToInteractive: "activeToInteractive 6s linear infinite"
+                activeToInteractive: "activeToInteractive 6s linear infinite",
+                waves: "waves 5s cubic-bezier(.55,.5,.45,.5) infinite"
             },
             keyframes: {
                 fadeIn: {
@@ -57,6 +58,14 @@ module.exports = {
                     },
                     "100%": {
                         backgroundColor: "rgb(var(--tw-interactive) / var(--tw-bg-opacity));"
+                    }
+                },
+                waves: {
+                    "0%": {
+                        transform: "translate3d(-90px, 0, 0)"
+                    },
+                    "100%": {
+                        transform: "translate3d(85px, 0, 0)"
                     }
                 }
             }

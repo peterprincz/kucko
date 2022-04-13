@@ -13,7 +13,7 @@ const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: Co
     });
 
     return (
-        <div className="container mx-auto px-3 md:px-6 lg:px-48 py:3 py-6 lg:py-20 flex flex-col justify-center items-center dpy-16 max-w-full bg-primary min-h-screen">
+        <div className="container mx-auto px-3 md:px-6 lg:px-48  flex flex-col justify-center items-center py-8 max-w-full bg-primary min-h-screen">
             <div ref={selfRef} className='animate-fadeInFromBottom opacity-0'>
                 <h1 className="self-baseline font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none text-gray-800">
                         {content.titleTop}

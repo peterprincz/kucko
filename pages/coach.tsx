@@ -1,6 +1,7 @@
 import type { GetStaticProps, NextPage } from 'next'
 import React, { useState } from 'react'
 import Layout from '../components/layout'
+import LIMarker from '../components/li-marker'
 import { getCoachData } from '../lib/data-reader'
 import { CoachData, CoachTypeSection } from '../lib/types/data-types'
 
@@ -75,7 +76,10 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
             <ul>
               {activeView.listItems.map((listItem, i) => {
                 return (
-                  <li key={i}>{listItem}</li>
+                  <li key={i} className='flex align-center my-3 gap-3'>
+                    <LIMarker/>
+                    <span>{listItem}</span>
+                    </li>
                 )
               })}
             </ul>
