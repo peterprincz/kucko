@@ -23,7 +23,8 @@ rgb(42, 217, 207)
     --tw-white: 255 255 255;
     --tw-primary: 178 235 224;
     --tw-secondary: 255 191 163;
-    --tw-interactive: 56 144 143;
+    /*--tw-secondary: 240 203 162;*/
+    --tw-interactive: 20 171 185;
     --tw-active: 42 217 207;
 }
 
@@ -56,6 +57,9 @@ rgb(42, 217, 207)
     }
     .border-active {
         border-color: rgb(var(--tw-active) / var(--tw-border-opacity));
+    }
+    .border-primary {
+        border-color: rgb(var(--tw-primary) / var(--tw-border-opacity));
     }
     .border-interactive {
         border-color: rgb(var(--tw-interactive) / var(--tw-border-opacity));

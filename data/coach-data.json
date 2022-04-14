@@ -15,7 +15,7 @@
         "buttonName": "Gyermek",
         "title": "Gyermek coaching",
         "introductionParagraphs": ["A gyermek coaching, gyermekeknek 3 éves kortól 12 éves korig szóló, rendkívül színes és változatos eszköztár segítségével (játékok, mesék, beszélgetések alkalmazásával), a gyermekek saját erőforrásaira épülő támogató, fejlesztő tevékenység."],
-        "listTitle": "MILYEN ESETEKBEN ÉRDEMES IGÉNYBE VENNI A GYEREK COACHINGOT?",
+        "listTitle": "Milyen esetekben érdemes igénybe venni a gyerek coachingot?",
         "listItems": [
             "Ha kommunikációs nehézségek vannak (veszekedések, konfliktusok..)",
             "Ha hisztizik a gyermek, vagy éppen túlérzékeny, düh és harag kezelés esetén",
@@ -38,7 +38,7 @@
         "buttonName": "Kamasz",
         "title": "KAMASZ COACHING (12 éves kortól – 18 éves korig)",
         "introductionParagraphs": ["Coachként a célom, a kamasz segítése, elismerése, támogatása a felnőtté válás útján, valamint a saját erősségeinek megerősítése, és feltérképezése. Támogatom abban őket, hogy megtalálják életcéljukat, fejlődő személyiségüket, önmagukat. Ez a támogatás pozitív hatással van a gyermek-szülő kapcsolatra. Az ülések alkalmával a fiatalok nyíltan, őszintén beszélhetnek legféltettebb titkaikról, érzéseikről."],
-        "listTitle": "MILYEN FELMERÜLŐ KÉRDÉSEKKEL FORDULHATNAK HOZZÁM?",
+        "listTitle": "Milyen felmerülő kérdésekkel fordulhatnak hozzám?",
         "listItems": [
             "Nem működik a kommuniáció gyermek és szülő között.",
             "Pályaválasztási dilemmákkal köszködik a gyermek, vagy felmerül az is, hogy mást szeretne a szülő és mást a gyermek.",
@@ -59,7 +59,7 @@
     },
     "parentCoachingSection": {
         "buttonName": "Felnött",
-        "title": "SZÜLŐKNEK, FELNŐTTEKNEK SZÓLÓ KONZULTÁCIÓK",
+        "title": "Szülőknek, felnőtteknek szóló konzultációk",
         "introductionParagraphs": [
             "Senki sem mondta, hogy könnyű szülőnek lenni. Minden szülő a lehető legjobbat szeretné gyermekének. A gyermekek tudatos nevelése rendkívül fontos, hiszen nem csak befolyásolja, de meg is határozza későbbi életüket és személyiségüket is. Ez maximálisan felelősségteljes és nehéz feladat. A harmónikus szülő-gyermek kapcsolat alapja a szeretet, a kölcsönös tisztelet, a bizalom, és a megfelelő családi légkör kialakítása. A szülők és gyermekek között szinte mindennaposak a kisebb-nagyobb konfliktusok. Sok olyan élethelyzet van, amikor a szülő tanácstalan, mivel is tenné a legjobbat gyermekének, mennyire legyen engedékeny illetve szigorú, vagy éppen hogyan is terelgesse a helyesnek vélt út felé.",
             "A beszélgetések alkalmával olyan modelleket sajátíthat el a szülő, illetve felnőtt, amelyekkel, az élethelyzeteinek felismerésével, a saját elakadásain túl tud lendülni, valamint a későbbiek folyamán ezen modellek segítségével, képes lesz saját gyermekének is segítséget, iránymutatást nyújtani."

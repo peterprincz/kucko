@@ -45,7 +45,7 @@ const Home: NextPage<IndexData> = (indexContent: IndexData) => {
       </div>
       <Wave inverse={false}></Wave>
       <div className="flex w-full">
-        <ContactSection selfRef={contactRef} content={indexContent.contactSection} />
+        <ContactSection showTitle={true} selfRef={contactRef} content={indexContent.contactSection} />
       </div>
     </Layout>
   )

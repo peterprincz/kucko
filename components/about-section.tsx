@@ -20,10 +20,9 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
   });
 
   return (
-    <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-6 lg:py-20 flex py-16 max-w-full bg-primary min-h-screen">
+    <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-6 lg:py-20 flex py-16 max-w-full bg-primary min-h-[83vh]">
       <div ref={introRef} className={sectionContentStyle + " animate-fadeInFromLeft opacity-0 mr-6"}>
-        <span className="w-20 h-2 bg-gray-800 mb-12">
-        </span>
+
         <h1 className="font-bebas-neue uppercase text-6xl mb-12 lg:mb-0 md:text-6l font-black flex flex-col leading-none text-gray-800">
           {content.titleTop}
           <span className="text-5xl sm:text-7xl">

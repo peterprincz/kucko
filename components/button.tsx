@@ -7,7 +7,7 @@ const Button: FC<{ onClick: React.MouseEventHandler, title: string, outlined: bo
 
     if (!outlined) {
         return (
-            <button className={className ? className : '' + " transition-all duration-500 uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-active text-active hover:bg-active hover:text-white text-md"} onClick={onClick}>
+            <button className={className ? className : '' + " transition-all duration-500 uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-active hover:bg-activ text-black text-md"} onClick={onClick}>
                 {title}
             </button>
         )

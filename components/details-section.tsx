@@ -21,7 +21,7 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
   });
 
   return (
-    <div className="container flex mx-auto px-3 md:px-2 lg:px-24 py:3 md:py-10 lg:py-15 max-w-full bg-secondary min-h-screen">
+    <div className="container flex mx-auto px-3 md:px-2 lg:px-24 py:3 md:py-10 lg:py-15 max-w-full bg-secondary min-h-[83vh]">
       <div className={sectionImageStyle}>
         <Image src={content.image} layout="intrinsic" width={1080} height={1482} className="mr-auto" />
       </div>

@@ -77,5 +77,6 @@ export type CoachTypeSection = {
     listItems:string[],
     duration:string,
     price:string,
-    priceDesc:string
+    priceDesc:string,
+    cancellation:string
 }   

@@ -41,7 +41,7 @@ const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) 
                 </a>
               </div>
               <div className={getNavDivStyle(4)}>
-                <a className={activePageIndex === 4 ? activeStyle : grayStyle} href="/#">
+                <a className={activePageIndex === 4 ? activeStyle : grayStyle} href="/contact">
                   Kapcsolat
                 </a>
               </div>
