@@ -69,7 +69,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
               const active = activeView.buttonName === section.buttonName;
               return (
                 <li onClick={() => onTopBarClick(section.buttonName)} key={section.buttonName} className={
-                  (active ? "" : "transition-all delay-50 hover:bg-primary bg-interactive")
+                  (active ? "" : "transition-all delay-50 hover:bg-primary bg-interactive shadow-lg")
                   + " hover:cursor-pointer grow"
                   + " border-primary border-x-2"
 
@@ -103,13 +103,12 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
                   )
                 })}
               </ul>
-              <div className='mb-8 mt-6 flex flex-col items-center text-center'>
-
-                <h1 className="font-bebas-neue text-highlight font-black text-gray-800">
-                  {activeView.priceDesc}
-                </h1>
-                <h1 className="font-bebas-neue text-highlight font-black text-gray-800">
+              <div className='mb-8 mt-6 flex flex-col items-center text-center bg-primary p-6 rounded-md shadow-md'>
+              <h1 className="font-bebas-neue text-highlight  text-gray-800">
                   {activeView.price} / {activeView.duration}
+                </h1>
+                <h1 className="font-bebas-neue text-highlight  text-gray-800">
+                  {activeView.priceDesc}
                 </h1>
               </div>
               {activeView.cancellation}

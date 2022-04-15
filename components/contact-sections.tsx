@@ -38,7 +38,7 @@ const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: Co
                                 <h3 className="text-highlightxl sm:text-xl text-gray-800 font-semibold py-4">
                                     {data.title}
                                 </h3>
-                                <p className="text-md  text-gray-400 py-4">
+                                <p className="text-md  text-gray-600 py-4">
                                     {data.body}
                                 </p>
                             </div>

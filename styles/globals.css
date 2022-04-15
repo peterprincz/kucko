@@ -28,7 +28,7 @@ rgb(42, 217, 207)
     --tw-active: 42 217 207;
     --tw-fontsize-huge: 6rem;
     --tw-fontsize-big: 4rem;
-    --tw-fontsize-highlight: 1.125rem;
+    --tw-fontsize-highlight: 1.5rem;
 }
 
 @tailwind components;
@@ -40,7 +40,7 @@ rgb(42, 217, 207)
     .text-big {
         font-size: var(--tw-fontsize-big);
     }
-    .text-hightlight {
+    .text-highlight {
         font-size: var(--tw-fontsize-highlight);
     }
     .bg-white {
@@ -72,6 +72,9 @@ rgb(42, 217, 207)
     }
     .border-primary {
         border-color: rgb(var(--tw-primary) / var(--tw-border-opacity));
+    }
+    .border-secondary {
+        border-color: rgb(var(--tw-secondary) / var(--tw-border-opacity));
     }
     .border-interactive {
         border-color: rgb(var(--tw-interactive) / var(--tw-border-opacity));

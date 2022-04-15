@@ -25,12 +25,18 @@ const Home: NextPage<IndexData> = (indexContent: IndexData) => {
 
   const scrollToContact = () => {
     if (contactRef.current !== null) {
-      contactRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const y = contactRef.current.getBoundingClientRect().top + window.pageYOffset + -100;
+      window.scrollTo({top: y, behavior: 'smooth'});
+      //contactRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      
     }
   };
   const scrollToDetails = () => {
     if (detailsRef.current !== null) {
-      detailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const y = detailsRef.current.getBoundingClientRect().top + window.pageYOffset + -100;
+      window.scrollTo({top: y, behavior: 'smooth'});
+      //detailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      
     }
   };
   

@@ -2,7 +2,7 @@ import { FC } from 'react'
 
 const Footer: FC = () => {
 
-    const grayStyle = "text-gray-400  hover:text-gray-800 px-3 py-2 rounded-md font-medium transition-colors duration-200";
+    const grayStyle = "text-gray-600  hover:text-gray-800 px-3 py-2 rounded-md font-medium transition-colors duration-200";
     
 
     return (

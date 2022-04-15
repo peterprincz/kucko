@@ -1,6 +1,11 @@
-about page:
-    center 
-    professional competencies to json
-    second carousel images
-all:
-    background-colors to variables
+index gombok
+margin javitások
+contact(szöveg, ikonok)
+iskola előkészitő
+url-ek
+------
+képek
+------
+docker
+szerver
+domain

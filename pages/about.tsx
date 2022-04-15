@@ -30,7 +30,9 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
       setDropDownOpen(true)
       setTimeout(() => {
         if (competencyRef.current != null) {
-          competencyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          const y = competencyRef.current.getBoundingClientRect().top + window.pageYOffset + -70;
+          window.scrollTo({top: y, behavior: 'smooth'});
+          //competencyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
       }, 400);
     }

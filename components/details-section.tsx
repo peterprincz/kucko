@@ -43,7 +43,7 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
                         <h5 className="text-lg leading-6 text-gray-800 font-bold">
                           {parapgraph.title}
                         </h5>
-                        <p className="mt-2 leading-6 text-gray-400">
+                        <p className="mt-2 leading-6 text-gray-600">
                           {parapgraph.body}
                         </p>
                       </div>
