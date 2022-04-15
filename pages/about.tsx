@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import { getAboutData } from '../lib/data-reader'
 import { AboutData } from '../lib/types/data-types'
 import { fadeInFromLeft } from '../hooks/fades';
+import ListItem from '../components/list-item'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -17,7 +18,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 const About: NextPage<AboutData> = (aboutContent: AboutData) => {
 
-  const liRef: React.RefObject<HTMLLIElement> = useRef<HTMLLIElement>(null);
+  const competencyRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
 
   const [dropDownOpen, setDropDownOpen] = useState(false)
 
@@ -28,8 +29,8 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
     } else {
       setDropDownOpen(true)
       setTimeout(() => {
-        if (liRef.current != null) {
-          liRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        if (competencyRef.current != null) {
+          competencyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
       }, 400);
     }
@@ -80,24 +81,30 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
           </div>
         </div>
       </div>
-      <div className='container max-w-full  mx-auto px-3 md:px-6 lg:px-24 bg-secondary hover:cursor-pointer'>
-        <div className="h-16 flex items-center justify-center gap-10 cursor-pointer" onClick={toogleDropDown}>
+      <div className={'container max-w-full  mx-auto px-3 md:px-6 lg:px-24 bg-secondary hover:cursor-pointer'}>
+        <div ref={competencyRef} className="h-16 flex items-center justify-center gap-0 lg:gap-10 cursor-pointer" onClick={toogleDropDown}>
           <h1 className="font-bebas-neue text-highlightxl sm:text-highlight font-black flex flex-col  text-gray-800">SZAKMAI KOMPETENCIÁIM</h1>
-          <div className={"rounded-full w-12 h-12 flex items-center justify-center w-12 h-12 " + (dropDownOpen ? ' ' : 'mt-2 animate-bounce')}>
-            <img src='/svg/arrow.svg' className={"transition-all " + (dropDownOpen ? "rotate-[270deg]": 'rotate-90')}></img>
+          <div className={"rounded-full flex items-center justify-center w-12 h-12 " + (dropDownOpen ? ' ' : 'mt-2 animate-bounce')}>
+            <img src='/svg/arrow.svg' className={"transition-all " + (dropDownOpen ? "rotate-[270deg]" : 'rotate-90')}></img>
           </div>
         </div>
 
-        <div className={"transition-all duration-1000	 overflow-hidden " + (dropDownOpen ? 'max-h-[64rem] scale-100' : "max-h-0 scale-0")}>
+        <div className={"transition-all duration-1000	 overflow-hidden " + (dropDownOpen ? 'max-h-[120rem] scale-100' : "max-h-0 scale-0")}>
           <ul className='mb-6 list-disc'>
             {aboutContent.competencies.map((competency, i, arr) => {
-              if (i == arr.length / 2) {
+              if (i ===  0) {
                 return (
-                  <li key={i} ref={liRef} className="p-4 ">{competency}</li>
+                  <li id="asd" key={i} className="p-4 ">
+                    <ListItem>
+                      <span className='ml-4'>
+                        {competency}
+                      </span>
+                    </ListItem>
+                  </li>
                 )
               } else {
                 return (
-                  <li key={i} className="p-4 ">{competency}</li>
+                  <li key={i} className="p-4"><ListItem><span className='ml-4'>{competency}</span></ListItem></li>
                 )
               }
             })}
@@ -105,7 +112,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
         </div>
       </div>
       <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 flex flex-col pt-16 max-w-full bg-primary">
-        <div ref={workContainer}  className="animate-fadeInFromLeft opacity-0">
+        <div ref={workContainer} className="animate-fadeInFromLeft opacity-0">
           <div className='flex flex-col lg:flex-row pt-16 gap-4'>
             <div className="w-3/3 lg:w-1/3 flex items-center justify-center" >
               <Carousel id="carousel2" images={aboutContent.workCarouselData.entries} />

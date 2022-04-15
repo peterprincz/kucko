@@ -2,7 +2,7 @@ import React, { FC, useEffect } from 'react'
 import { fadeInFromRight } from '../hooks/fades';
 import { DetailsSection } from '../lib/types/data-types';
 import Image from 'next/image'
-import LIMarker from './li-marker';
+import ListItem from './list-item';
 
 
 
@@ -34,26 +34,25 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
         </h1>
         <ul className="mt-10">
           {content.paragraphs.map((parapgraph, i) => {
-            return(
-            <li key={i} className="mt-10">
-              <div className="flex">
-                <div className="flex-shrink-0">
-                <LIMarker/>
+            return (
+              <li key={i} className="mt-10">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <ListItem>
+                      <div className="ml-4">
+                        <h5 className="text-lg leading-6 text-gray-800 font-bold">
+                          {parapgraph.title}
+                        </h5>
+                        <p className="mt-2 leading-6 text-gray-400">
+                          {parapgraph.body}
+                        </p>
+                      </div>
+                    </ListItem>
+                  </div>
                 </div>
-                <div className="ml-4">
-                  <h5 className="text-lg leading-6 text-gray-800 font-bold">
-                    {parapgraph.title}
-                  </h5>
-                  <p className="mt-2 leading-6 text-gray-400">
-                    {parapgraph.body}
-                  </p>
-                </div>
-              </div>
-            </li>
+              </li>
             )
           })}
-
-
         </ul>
       </div>
     </div>

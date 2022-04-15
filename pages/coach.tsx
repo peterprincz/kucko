@@ -1,7 +1,8 @@
 import type { GetStaticProps, NextPage } from 'next'
 import React, { useRef, useState } from 'react'
 import Layout from '../components/layout'
-import LIMarker from '../components/li-marker'
+import ListItem from '../components/list-item'
+import LIMarker from '../components/list-item'
 import { getCoachData } from '../lib/data-reader'
 import { CoachData, CoachTypeSection } from '../lib/types/data-types'
 
@@ -73,7 +74,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
                   + " border-primary border-x-2"
 
                 }>
-                  <button className={(active ? "" : "") + " py-4"} >{section.buttonName}</button>
+                  <div className={(active ? "" : "") + " py-4"} >{section.buttonName}</div>
                 </li>
               )
             })}
@@ -95,8 +96,9 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
                 {activeView.listItems.map((listItem, i) => {
                   return (
                     <li key={i} className='flex align-center my-3 gap-3'>
-                      <LIMarker />
-                      <span>{listItem}</span>
+                      <ListItem>
+                      <span className='ml-4'>{listItem}</span>
+                      </ListItem>
                     </li>
                   )
                 })}

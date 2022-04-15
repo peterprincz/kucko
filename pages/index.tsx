@@ -30,7 +30,7 @@ const Home: NextPage<IndexData> = (indexContent: IndexData) => {
   };
   const scrollToDetails = () => {
     if (detailsRef.current !== null) {
-      detailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      detailsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
   };
   
