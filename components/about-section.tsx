@@ -8,7 +8,7 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
 
   const introRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
 
-  const sectionParagraphStyle = "text-left text-gray-700 mb-4";
+  const sectionParagraphStyle = "text-left text-gray-800 mb-4";
   const sectionContentStyle = "lg:w-3/5 flex flex-col";
   const sectionImageStyle = "hidden lg:flex lg:w-2/5 px-2 items-center";
 
@@ -20,12 +20,12 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
   });
 
   return (
-    <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-6 lg:py-20 flex py-16 max-w-full bg-primary min-h-[83vh]">
+    <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-6 lg:py-20 flex py-20 max-w-full bg-primary min-h-[83vh]">
       <div ref={introRef} className={sectionContentStyle + " animate-fadeInFromLeft opacity-0 mr-6"}>
 
-        <h1 className="font-bebas-neue uppercase text-6xl mb-12 lg:mb-0 md:text-6l font-black flex flex-col leading-none text-gray-800">
+        <h1 className="font-bebas-neue uppercase text-big mb-12 lg:mb-0 md:text-6l font-black flex flex-col leading-none text-gray-800">
           {content.titleTop}
-          <span className="text-5xl sm:text-7xl">
+          <span className="text-big sm:text-huge">
             {content.titleBottom}
           </span>
         </h1>

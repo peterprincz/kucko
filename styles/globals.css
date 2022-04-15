@@ -26,11 +26,23 @@ rgb(42, 217, 207)
     /*--tw-secondary: 240 203 162;*/
     --tw-interactive: 20 171 185;
     --tw-active: 42 217 207;
+    --tw-fontsize-huge: 6rem;
+    --tw-fontsize-big: 4rem;
+    --tw-fontsize-highlight: 1.125rem;
 }
 
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
+    .text-huge {
+        font-size: var(--tw-fontsize-huge);
+    }
+    .text-big {
+        font-size: var(--tw-fontsize-big);
+    }
+    .text-hightlight {
+        font-size: var(--tw-fontsize-highlight);
+    }
     .bg-white {
         background-color: rgb(var(--tw-white) / var(--tw-bg-opacity));
     }

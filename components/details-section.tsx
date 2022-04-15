@@ -26,9 +26,9 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
         <Image src={content.image} layout="intrinsic" width={1080} height={1482} className="mr-auto" />
       </div>
       <div className={sectionContentStyle + " animate-fadeInFromRight opacity-0 flex items-center"} ref={selfRef} >
-        <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none text-gray-800">
+        <h1 className="font-bebas-neue uppercase text-big sm:text-huge font-black flex flex-col leading-none text-gray-800">
           {content.titleTop}
-          <span className="text-5xl sm:text-4xl">
+          <span className="text-big sm:text-big">
             {content.titleBottom}
           </span>
         </h1>
@@ -41,10 +41,10 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
                 <LIMarker/>
                 </div>
                 <div className="ml-4">
-                  <h5 className="text-lg leading-6 text-gray-900 font-bold">
+                  <h5 className="text-lg leading-6 text-gray-800 font-bold">
                     {parapgraph.title}
                   </h5>
-                  <p className="mt-2 leading-6 text-gray-500">
+                  <p className="mt-2 leading-6 text-gray-400">
                     {parapgraph.body}
                   </p>
                 </div>

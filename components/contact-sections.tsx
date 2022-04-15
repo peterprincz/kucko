@@ -16,9 +16,9 @@ const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: Co
         <div className="container mx-auto px-3 md:px-6 lg:px-48  flex flex-col justify-center items-center py-8 max-w-full bg-primary min-h-[83vh]">
             <div ref={selfRef} className='animate-fadeInFromBottom opacity-0'>
                 {showTitle &&
-                    <h1 className="self-baseline font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none text-gray-800">
+                    <h1 className="self-baseline font-bebas-neue uppercase text-big sm:text-huge font-black flex flex-col leading-none text-gray-800">
                         {content.titleTop}
-                        <span className="text-5xl sm:text-7xl">
+                        <span className="text-big sm:text-huge">
                             {content.titleBottom}
                         </span>
                     </h1>
@@ -35,10 +35,10 @@ const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: Co
                                         </svg>
                                     </div>
                                 </div>
-                                <h3 className="text-2xl sm:text-xl text-gray-700 font-semibold py-4">
+                                <h3 className="text-highlightxl sm:text-xl text-gray-800 font-semibold py-4">
                                     {data.title}
                                 </h3>
-                                <p className="text-md  text-gray-500 py-4">
+                                <p className="text-md  text-gray-400 py-4">
                                     {data.body}
                                 </p>
                             </div>

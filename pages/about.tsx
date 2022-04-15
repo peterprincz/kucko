@@ -56,11 +56,11 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
   return (
 
     <Layout title='Rólam' activePageIndex={1}>
-      <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-20 py:3 md:py-24 lg:py-20 py-16 flex flex-col  bg-primary min-h-screen">
+      <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 py-20 flex flex-col  bg-primary min-h-screen">
         <div ref={aboutContainer} className="animate-fadeInFromLeft opacity-0">
-          <h1 className="font-bebas-neue text-6xl sm:text-8xl font-black flex flex-col  text-gray-800">
+          <h1 className="font-bebas-neue text-big sm:text-huge font-black flex flex-col  text-gray-800 leading-none">
             Bernadett Petrovics
-            <span className="text-6 xl sm:text-6xl">
+            <span className="text-big mt-4">
               Coach
             </span>
           </h1>
@@ -80,9 +80,9 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
           </div>
         </div>
       </div>
-      <div className='container max-w-full  mx-auto px-3 md:px-6 lg:px-20 bg-secondary hover:cursor-pointer'>
+      <div className='container max-w-full  mx-auto px-3 md:px-6 lg:px-24 bg-secondary hover:cursor-pointer'>
         <div className="h-16 flex items-center justify-center gap-10 cursor-pointer" onClick={toogleDropDown}>
-          <h1 className="font-bebas-neue text-2xl sm:text-2 font-black flex flex-col  text-gray-800">SZAKMAI KOMPETENCIÁIM</h1>
+          <h1 className="font-bebas-neue text-highlightxl sm:text-highlight font-black flex flex-col  text-gray-800">SZAKMAI KOMPETENCIÁIM</h1>
           <div className={"rounded-full w-12 h-12 flex items-center justify-center w-12 h-12 " + (dropDownOpen ? ' ' : 'mt-2 animate-bounce')}>
             <img src='/svg/arrow.svg' className={"transition-all " + (dropDownOpen ? "rotate-[270deg]": 'rotate-90')}></img>
           </div>
@@ -104,7 +104,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
           </ul>
         </div>
       </div>
-      <div className="container mx-auto px-3 md:px-6 lg:px-20 py:3 md:py-24 lg:py-20 flex flex-col pt-16 max-w-full bg-primary">
+      <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 flex flex-col pt-16 max-w-full bg-primary">
         <div ref={workContainer}  className="animate-fadeInFromLeft opacity-0">
           <div className='flex flex-col lg:flex-row pt-16 gap-4'>
             <div className="w-3/3 lg:w-1/3 flex items-center justify-center" >
@@ -114,7 +114,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
               {aboutContent.workParagraphs.map((workParagraph, i) => {
                 return (
                   <div className='mb-12' key={i}>
-                    <h6 className="font-bebas-neue text-3xl sm:text-3xl font-black text-gray-800 mb-4">
+                    <h6 className="font-bebas-neue text-highlight sm:text-highlight font-black text-gray-800 mb-2">
                       {workParagraph.title}
                     </h6>
                     <div>
