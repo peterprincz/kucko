@@ -5,6 +5,7 @@
 Current stage [Vercel](https://kucko.vercel.app/)
 
 ## How to Run
+Requires NodeJS and NPM.
 
 ```bash
 npm install
