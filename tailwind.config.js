@@ -5,6 +5,9 @@ module.exports = {
         './node_modules/tw-elements/dist/js/**/*.js'
     ],
     theme: {
+        fontFamily: {
+            'cursive': ['cursive']
+        },
         extend: {
             animation: {
                 fadeIn: "fadeIn 2s ease-in forwards",

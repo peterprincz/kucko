@@ -6,7 +6,7 @@ const Wave: FC<{inverse:boolean}> = ({ inverse, children }) => {
     return (
         <div className={(inverse ? "bg-primary" : "bg-secondary") + ' w-full'}>
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto"
                 className='relative w-full h-10 min-h-10 max-h-20'
                 >
                 <defs>

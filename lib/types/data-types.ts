@@ -14,12 +14,16 @@ export type AboutSection = {
 export type DetailsSection = {
     titleTop: string,
     titleBottom: string,
-    paragraphs: {
+    sides: {
         title:string,
-        body:string
-    }[]
+        paragraphs: {
+            title:string,
+            body:string
+        }[],
+    }[],
     image:string;
 }
+
 
 export type ContactSection = {
     titleTop: string,
@@ -80,3 +84,12 @@ export type CoachTypeSection = {
     priceDesc:string,
     cancellation:string
 }   
+
+export type Dandelion = {
+    id:number,
+    xTarget:number, 
+    yTarget:number, 
+    rotate:number, 
+    offsetX: number, 
+    offsetY: number 
+}

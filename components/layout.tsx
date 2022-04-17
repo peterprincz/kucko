@@ -7,7 +7,7 @@ import NavBar from './navbar';
 
 const Layout: FC<{ title: string, activePageIndex: number }> = ({ children, title, activePageIndex }) => {
     return (
-        <div >
+        <div>
             <Script src='index.min.js'/>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
@@ -16,7 +16,7 @@ const Layout: FC<{ title: string, activePageIndex: number }> = ({ children, titl
                 <title>{title}</title>
             </Head>
             <NavBar activePageIndex={activePageIndex} />
-            <main className="flex w-full min-h-screen flex-1 flex-col items-center justify-center scroll-smooth min-h-[83vh]">
+            <main className="flex w-full min-h-screen flex-1 flex-col items-center justify-center scroll-smooth min-h-[83vh] overflow-hidden">
                 {children}
             </main>
             <Footer />

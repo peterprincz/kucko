@@ -50,7 +50,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
     <Layout title='Rólam' activePageIndex={2}>
       <div className="max-w-full min-h-screen mx-auto  pt-9 flex flex-col bg-primary">
         <div className='flex justify-center w-100 mb-9'>
-          <h1 className='font-bebas-neue text-big sm:text-huge font-black flex flex-col  text-gray-800'>{coachContent.coachSection.title}</h1>
+          <h1 className=' text-big sm:text-huge font-black flex flex-col  text-gray-800'>{coachContent.coachSection.title}</h1>
         </div>
         <div className='px-3 md:px-6 lg:px-24'>
           {coachContent.coachSection.paragraphs.map(paragraph => {
@@ -61,7 +61,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
           <span>További információ <a href={coachContent.coachSection.link}>Wikipedia</a></span>
         </div>
         <div className='flex justify-center w-100 mb-9 mt-9'>
-          <h1 className='font-bebas-neue text-big sm:text-huge font-black flex flex-col  text-gray-800'>Tipusok</h1>
+          <h1 className=' text-big sm:text-huge font-black flex flex-col  text-gray-800'>Tipusok</h1>
         </div>
         <div className='bg-secondary min-h-screen '>
           <ul className="flex justify-evenly text-center">
@@ -69,7 +69,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
               const active = activeView.buttonName === section.buttonName;
               return (
                 <li onClick={() => onTopBarClick(section.buttonName)} key={section.buttonName} className={
-                  (active ? "" : "transition-all delay-50 hover:bg-primary bg-interactive shadow-lg")
+                  (active ? "" : "transition-all delay-50 hover:bg-interactive bg-active shadow-lg")
                   + " hover:cursor-pointer grow"
                   + " border-primary border-x-2"
 
@@ -87,7 +87,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
                 )
               })}
               <div className='mb-8 mt-6'>
-                <span className="font-bebas-neue text-highlight sm:text-highlight font-black text-gray-800 ">
+                <span className=" text-highlight sm:text-highlight font-black text-gray-800 ">
                   {activeView.listTitle}
                 </span>
               </div>
@@ -104,10 +104,10 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
                 })}
               </ul>
               <div className='mb-8 mt-6 flex flex-col items-center text-center bg-primary p-6 rounded-md shadow-md'>
-              <h1 className="font-bebas-neue text-highlight  text-gray-800">
+              <h1 className=" text-highlight  text-gray-800">
                   {activeView.price} / {activeView.duration}
                 </h1>
-                <h1 className="font-bebas-neue text-highlight  text-gray-800">
+                <h1 className=" text-highlight  text-gray-800">
                   {activeView.priceDesc}
                 </h1>
               </div>

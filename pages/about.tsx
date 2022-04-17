@@ -61,7 +61,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
     <Layout title='Rólam' activePageIndex={1}>
       <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 py-20 flex flex-col  bg-primary min-h-screen">
         <div ref={aboutContainer} className="animate-fadeInFromLeft opacity-0">
-          <h1 className="font-bebas-neue text-big sm:text-huge font-black flex flex-col  text-gray-800 leading-none">
+          <h1 className=" text-big sm:text-huge font-black flex flex-col  text-gray-800 leading-none">
             Bernadett Petrovics
             <span className="text-big mt-4">
               Coach
@@ -85,7 +85,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
       </div>
       <div className={'container max-w-full  mx-auto px-3 md:px-6 lg:px-24 bg-secondary hover:cursor-pointer'}>
         <div ref={competencyRef} className="h-16 flex items-center justify-center gap-0 lg:gap-10 cursor-pointer" onClick={toogleDropDown}>
-          <h1 className="font-bebas-neue text-highlightxl sm:text-highlight font-black flex flex-col  text-gray-800">SZAKMAI KOMPETENCIÁIM</h1>
+          <h1 className=" text-highlightxl sm:text-highlight font-black flex flex-col  text-gray-800">SZAKMAI KOMPETENCIÁIM</h1>
           <div className={"rounded-full flex items-center justify-center w-12 h-12 " + (dropDownOpen ? ' ' : 'mt-2 animate-bounce')}>
             <img src='/svg/arrow.svg' className={"transition-all " + (dropDownOpen ? "rotate-[270deg]" : 'rotate-90')}></img>
           </div>
@@ -123,7 +123,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
               {aboutContent.workParagraphs.map((workParagraph, i) => {
                 return (
                   <div className='mb-12' key={i}>
-                    <h6 className="font-bebas-neue text-highlight sm:text-highlight font-black text-gray-800 mb-2">
+                    <h6 className=" text-highlight sm:text-highlight font-black text-gray-800 mb-2">
                       {workParagraph.title}
                     </h6>
                     <div>

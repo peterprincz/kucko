@@ -1,41 +1,41 @@
 {
     "aboutSection": {
-        "titleTop": "Coaching",
+        "titleTop": "Kiskenguru varázsműhely és lélekkuckó",
         "titleBottom": "",
         "paragraphs": [
-            "A coaching, a coach és az ügyfél között módszertani eszközök felhasználásával zajló, beszélgetési folyamat, melyben az ügyfél találja meg saját részére a legjobb megoldási alternatívákat. A coach és az ügyfél kapcsolata a bizalomra épül, és a titoktartás jellemzi.",
-            "A coaching folyamatot a jövőorientáltság jellemzi. Nem a múlt sérelmeit boncolgatja. A munka a jelenben folyik. A cél a problémák és konfliktusok megszűntetése, és a megoldások gyors elősegítése „itt és most”.",
-            "A coach abban segít, hogy az ügyfél végig tudjon menni a sajátmaga által fontosnak tartott, az úgynevezett „változás útján”. Képes legyen döntést hozni, éselérje a kitűzött céljait úgy, hogy közben mindvégig támogatja őt a coach.",
-            "A coach soha nem dolgozik az ügyfél helyett, hanem partnerként maximálisan támogatja őt a folyamatában, tiszteletben tartva annak döntéseit. Nem kínál kész megoldásokat, hanem figyelembe véve az ügyfél egyéni adottságait, tulajdonságait, belső erőforrásait, maximális figyelemmel, odafordulással, empátiával segít, valamint a folyamat során kérdésekkel, visszajelzésekkel, educatióval igyekszik utat mutatni és támogatni a fejlődést."
+            "Gyermek és ifjúsági szellemi-lelki tanácsadás, és iskolaelőkészítő foglalkozások",
+            "Amennyiben problémája, esetleg elakadása van gyermekével, vagy mindezeket szeretné megelőzni, szeretettel várom első ingyenes konzultációmra, mely után kezdetét veheti a közös munka!",
+            "„ A gyerek számára a legjobb terápia valószínűleg az a jóérzésű, stabil felnőtt, akinek a szívében szeretet és türelem lakozik.”  "
         ],
-        "image": "/images/1.jpg"
+        "image": "/images/dandelion2.png"
     },
     "detailsSection": {
-        "titleTop": "MIBEN TUDOK",
-        "titleBottom": "SEGITENI?",
-        "paragraphs": [{
-                "body": "Ha kommunikációs nehézségek vannak (veszekedések, konfliktusok..),",
-                "title": "Kommunikáció"
+        "titleTop": "MILYEN ESETEKBEN",
+        "titleBottom": "TUDOK SEGÍTENI?",
+        "sides": [
+            {
+                "title": "Coaching",
+                "paragraphs": [
+                    {"title": "Önbizalomhiány", "body": ""},
+                    {"title": "Kommunikációs problémák", "body": ""},
+                    {"title": "Szorongás", "body": ""},
+                    {"title": "Beilleszkedési nehézségek", "body": ""},
+                    {"title": "Hiszti", "body": ""},
+                    {"title": "Motiváció hiánya", "body": ""},
+                    {"title": "Kamaszoknak (pályaválasztás, hangulatingadozás..)", "body": ""}
+                ]
             },
             {
-                "body": "Ha hisztizik a gyermek, vagy éppen túlérzékeny, düh és harag kezelés esetén,",
-                "title": "hiszti"
-            },
-            {
-                "body": "Ha beilleszkedési nehézségekkel küzd (megszegi a szabályokat, agresszív,..),",
-                "title": "beilleszkedls"
-            },
-            {
-                "body": "Ha motiváció hiánya merül fel (figyelemzavar, tanulási nehézségek, lustaság..),",
-                "title": "motiváció"
-            },
-            {
-                "body": "Ha motiváció hiánya merül fel (figyelemzavar, tanulási nehézségek, lustaság..),",
-                "title": "motiváció"
-            },
-            {
-                "body": "Ha motiváció hiánya merül fel (figyelemzavar, tanulási nehézségek, lustaság..),",
-                "title": "motiváció"
+                "title": "Iskolaelőkészítő",
+                "paragraphs": [
+                    {"title": "szociális képességek fejlesztése", "body": ""},
+                    {"title": "kognitív képességek fejlesztése", "body": ""},
+                    {"title": "verbális fejlesztés", "body": ""},
+                    {"title": "emlékezet fejlesztése", "body": ""},
+                    {"title": "percepció fejlesztése", "body": ""},
+                    {"title": "gondolkodás fejlesztése", "body": ""},
+                    {"title": "szerialitás fejlesztése", "body": ""}
+                ]
             }
         ],
         "image": "/images/2.jpg"
@@ -43,7 +43,8 @@
     "contactSection": {
         "titleTop": "ITT",
         "titleBottom": "ELÉRSZ",
-        "contactData": [{
+        "contactData": [
+            {
                 "title": "facebook",
                 "body": "Facebook ide"
             },
