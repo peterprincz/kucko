@@ -7,6 +7,10 @@ function getRndInteger(min:number, max:number):number {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
+function xsaasd(min:number, max:number):number {
+  return 51505;
+}
+
 
 let dandelionCounter = 0;
 
@@ -21,27 +25,52 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
   const [dandelions, setDandelions] = useState<Dandelion[]>([]);
   const dandelionRef: React.RefObject<HTMLImageElement> = useRef<HTMLImageElement>(null);
 
-  const dandelionSpawnRatio = 0.4;
-  const dandelionClockSpeed = 2000;
+  let dandelionSpawnRatio = 0.4;
+  let dandelionClockSpeed = 2000;
 
   useEffect(() => {
+
+
+    
+
+
     setInterval(() => {
+      
+      /*--- Implementation here begins--- */
       if(Math.random() < dandelionSpawnRatio){
         return false;
       }
       setDandelions((stateArray) => {
-        const newDandelion:Dandelion = {
-          id:++dandelionCounter,
-          xTarget: getRndInteger(300, 400),
-          yTarget: getRndInteger(-400, -300),
-          rotate: getRndInteger(40, 360),
-          offsetX: getRndInteger(100, 200),
-          offsetY:  getRndInteger(100, 200)
+        const dandelions:Dandelion[] = []
+        for (let i = 0; i < getRndInteger(1, 2); i++) {
+          const newDandelion:Dandelion = {
+            id:++dandelionCounter,
+            xTarget: getRndInteger(300, 400),
+            yTarget: getRndInteger(-400, -300),
+            rotate: getRndInteger(40, 360),
+            offsetX: getRndInteger(100, 200),
+            offsetY:  getRndInteger(100, 200),
+            fadeOutTimeMS: getRndInteger(5000, 7000),
+            animationtimeS: getRndInteger(6,9)
+          }
+          dandelions.push(newDandelion)
         }
-        const updatedArray = [...stateArray, newDandelion];
+        //Original array + new Array
+        const updatedArray = [...stateArray, ...dandelions];
         return updatedArray
       })
-    }, dandelionClockSpeed)
+      /*--- Implementation here ends--- */
+    }, 
+    
+    
+    dandelionClockSpeed)
+
+
+
+
+
+
+    
   }, []);
 
   useEffect(() => {

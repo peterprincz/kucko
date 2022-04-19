@@ -6,7 +6,7 @@ function getRndInteger(min:number, max:number):number {
   }
   
 
-const DandelitonParticle: FC<Dandelion> = ({ xTarget, yTarget, rotate, offsetX, offsetY, children }) => {
+const DandelitonParticle: FC<Dandelion> = ({ xTarget, yTarget, rotate, offsetX, offsetY,fadeOutTimeMS, animationtimeS, children }) => {
 
 
     const animationDef = "translate(" + xTarget+ "px, "+ yTarget + "px) rotate(" + rotate + "deg)";
@@ -20,7 +20,7 @@ const DandelitonParticle: FC<Dandelion> = ({ xTarget, yTarget, rotate, offsetX, 
         }, 100);
         setTimeout(() => {
             setOpacity(0)
-        }, 6000)
+        }, fadeOutTimeMS)
         return () => {
         };
     }, []);
@@ -30,7 +30,7 @@ const DandelitonParticle: FC<Dandelion> = ({ xTarget, yTarget, rotate, offsetX, 
     return (
         <img style={{
             transform: transform,
-            transition: "opacity 4s  ease-in-out, transform 8s ease-in-out",
+            transition: "opacity 4s  ease-in-out, transform " + animationtimeS +"s ease-in-out",
             opacity: opacity,
             position: "absolute",
             paddingLeft: offsetX,
