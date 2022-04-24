@@ -1,6 +1,8 @@
 import React, { FC, useEffect, useRef, useState } from 'react'
-import { fadeInFromLeft } from '../hooks/fades';
-import { AboutSection, Dandelion } from '../lib/types/data-types';
+import { fadeInFromLeft } from '../../hooks/fades';
+import { AboutSection, Dandelion } from '../../lib/types/data-types';
+import Button from '../button';
+import Title from '../title';
 import DandelitonParticle from './dandelion_particle';
 
 function getRndInteger(min: number, max: number): number {
@@ -17,11 +19,6 @@ let dandelionCounter = 0;
 const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, scrollTwo: React.MouseEventHandler<HTMLButtonElement>, content: AboutSection }> = ({ scrollOne, scrollTwo, content, children }) => {
 
   const introRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
-
-  const sectionParagraphStyle = "text-left text-gray-800 mb-4";
-  const sectionContentStyle = "lg:w-3/5 flex flex-col  min-w-0 ";
-  const sectionImageStyle = "hidden lg:flex lg:w-2/5 px-2 items-center";
-
   const [dandelions, setDandelions] = useState<Dandelion[]>([]);
   const dandelionRef: React.RefObject<HTMLImageElement> = useRef<HTMLImageElement>(null);
 
@@ -29,10 +26,6 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
   let dandelionClockSpeed = 2000;
 
   useEffect(() => {
-
-
-
-
 
     setInterval(() => {
 
@@ -61,16 +54,7 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
       })
       /*--- Implementation here ends--- */
     },
-
-
       dandelionClockSpeed)
-
-
-
-
-
-
-
   }, []);
 
   useEffect(() => {
@@ -82,33 +66,26 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
 
   return (
     <div className="container px-3 md:px-6 lg:px-24 py:3 md:py-6 lg:py-20 flex py-20 max-w-full bg-primary min-h-[90vh]">
-      <div ref={introRef} className={sectionContentStyle + " animate-fadeInFromLeft opacity-0 mr-6 break-words"}>
-        <h1 className="font-cursive uppercase text-big mb-12 md:text-6l font-black  text-gray-800">
-          {content.titleTop}
-        </h1>
-        <span className="text-big sm:text-huge">
-          {content.titleBottom}
-        </span>
+      <div ref={introRef} className="lg:w-3/5 flex flex-col  min-w-0 animate-fadeInFromLeft opacity-0 mr-6 break-words">
+        <Title title={content.titleTop} titleClass="font-cursive" subTitle={content.titleBottom} containerClass='mb-24' />
         {content.paragraphs.map((paragraph, i) => {
           return (
-            <p className={sectionParagraphStyle} key={i}>
+            <p className="text-left text-gray-800 mb-4" key={i}>
               {paragraph}
             </p>
           )
         })}
         <div className="md:flex-row mt-8">
-            <button className={"transition-colors duration-500 min-w-[12rem] py-2 px-4 rounded-lg bg-secondary border-2 border-transparent  mr-4 hover:border-primary"}
-              onClick={scrollTwo}>
-              Tovább olvasok
-            </button>
-            <button
-              className={"transition-all duration-500 min-w-[12rem] py-2 px-4 mt-6  rounded-lg bg-transparent border-2 border-active hover:bg-active "}
-              onClick={scrollOne}>
-              Kapcsolat
-            </button>
+          <Button outlined={true}
+            onClick={scrollTwo}
+            title="Tovább olvasok"
+            />
+          <Button outlined={false}
+            onClick={scrollOne}
+            title="Kapcsolat" />
         </div>
       </div>
-      <div className={sectionImageStyle}>
+      <div className="hidden lg:flex lg:w-2/5 px-2 items-center">
         <img src={content.image} ref={dandelionRef} className="" />
 
         {dandelions.map(dandelion => {

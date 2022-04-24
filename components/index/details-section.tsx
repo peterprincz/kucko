@@ -1,7 +1,8 @@
 import React, { FC, useEffect } from 'react'
-import { fadeInFromRight } from '../hooks/fades';
-import { DetailsSection } from '../lib/types/data-types';
-import ListItem from './list-item';
+import { fadeInFromRight } from '../../hooks/fades';
+import { DetailsSection } from '../../lib/types/data-types';
+import ListItem from '../list-item';
+import Title from '../title';
 
 
 
@@ -21,17 +22,12 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
   return (
     <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-6 lg:py-20 flex py-20 max-w-full bg-secondary min-h-[90vh]">
       <div className={sectionContentStyle + " animate-fadeInFromRight opacity-0 grow"} ref={selfRef} >
-        <h1 className="text-gray-800 font-black sm:text-huge flex flex-col">
-          {content.titleTop}
-          <span className="text-big sm:text-big ">
-            {content.titleBottom}
-          </span>
-        </h1>
+        <Title title={content.titleTop} subTitle={content.titleBottom}/>
         <div className='flex flex-col md:flex-row justify-around mt-20'>
           {content.sides.map((side, i) => {
             return (
               <div key={i}>
-                <h1 className='text-gray-800 font-black text-big break-all'>{side.title}</h1>
+                <Title subTitle={side.title}/>
                 <ul className="mt-10">
                   {side.paragraphs.map((parapgraph, i) => {
                     return (

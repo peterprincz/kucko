@@ -12,39 +12,36 @@
     "detailsSection": {
         "titleTop": "MILYEN ESETEKBEN",
         "titleBottom": "TUDOK SEGÍTENI?",
-        "sides": [
-            {
+        "sides": [{
                 "title": "Coaching",
                 "paragraphs": [
-                    {"title": "Önbizalomhiány", "body": ""},
-                    {"title": "Kommunikációs problémák", "body": ""},
-                    {"title": "Szorongás", "body": ""},
-                    {"title": "Beilleszkedési nehézségek", "body": ""},
-                    {"title": "Hiszti", "body": ""},
-                    {"title": "Motiváció hiánya", "body": ""},
-                    {"title": "Kamaszoknak (pályaválasztás, hangulatingadozás..)", "body": ""}
+                    { "title": "Önbizalomhiány", "body": "" },
+                    { "title": "Kommunikációs problémák", "body": "" },
+                    { "title": "Szorongás", "body": "" },
+                    { "title": "Beilleszkedési nehézségek", "body": "" },
+                    { "title": "Hiszti", "body": "" },
+                    { "title": "Motiváció hiánya", "body": "" },
+                    { "title": "Kamaszoknak (pályaválasztás, hangulatingadozás..)", "body": "" }
                 ]
             },
             {
                 "title": "Iskolaelőkészítő",
                 "paragraphs": [
-                    {"title": "szociális képességek fejlesztése", "body": ""},
-                    {"title": "kognitív képességek fejlesztése", "body": ""},
-                    {"title": "verbális fejlesztés", "body": ""},
-                    {"title": "emlékezet fejlesztése", "body": ""},
-                    {"title": "percepció fejlesztése", "body": ""},
-                    {"title": "gondolkodás fejlesztése", "body": ""},
-                    {"title": "szerialitás fejlesztése", "body": ""}
+                    { "title": "szociális képességek fejlesztése", "body": "" },
+                    { "title": "kognitív képességek fejlesztése", "body": "" },
+                    { "title": "verbális fejlesztés", "body": "" },
+                    { "title": "emlékezet fejlesztése", "body": "" },
+                    { "title": "percepció fejlesztése", "body": "" },
+                    { "title": "gondolkodás fejlesztése", "body": "" },
+                    { "title": "szerialitás fejlesztése", "body": "" }
                 ]
             }
         ],
         "image": "/images/2.jpg"
     },
     "contactSection": {
-        "titleTop": "ITT",
-        "titleBottom": "ELÉRSZ",
-        "contactData": [
-            {
+        "titleTop": "Kapcsolat",
+        "contactData": [{
                 "title": "facebook",
                 "body": "Facebook ide"
             },

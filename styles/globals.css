@@ -28,6 +28,7 @@ rgb(236, 173, 143)
 rgb(175, 110, 78)
 
 */
+
 :root {
     --tw-bg-opacity: 0.9;
     --tw-border-opacity: 0.7;
@@ -37,9 +38,10 @@ rgb(175, 110, 78)
     --tw-interactive: 175 110 78;
     --tw-active: 236 173 143;
     --tw-fontsize-huge: 6rem;
-    --tw-fontsize-big: 4rem;
-    --tw-fontsize-highlight: 1.5rem;
+    --tw-fontsize-big: 3.75rem;
+    --tw-fontsize-highlight: 1.75rem;
 }
+
 
 /*
 

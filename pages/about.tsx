@@ -1,11 +1,12 @@
 import type { GetStaticProps, NextPage } from 'next'
 import React, { useEffect, useRef, useState } from 'react'
 import Carousel from '../components/carousel'
-import Layout from '../components/layout'
+import Layout from '../components/layout/layout'
 import { getAboutData } from '../lib/data-reader'
 import { AboutData } from '../lib/types/data-types'
 import { fadeInFromLeft } from '../hooks/fades';
 import ListItem from '../components/list-item'
+import Title from '../components/title'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -61,12 +62,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
     <Layout title='Rólam' activePageIndex={1}>
       <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 py-20 flex flex-col  bg-primary min-h-screen">
         <div ref={aboutContainer} className="animate-fadeInFromLeft opacity-0">
-          <h1 className=" text-big sm:text-huge font-black flex flex-col  text-gray-800 leading-none">
-            Bernadett Petrovics
-            <span className="text-big mt-4">
-              Coach
-            </span>
-          </h1>
+          <Title title='Bernadett Petrovics' subTitle='Coach'/>
           <div className='flex flex-col lg:flex-row pt-16 gap-4'>
             <div className="w-3/3 lg:w-2/3 pr-10 order-2 lg:order-1" >
               {aboutContent.introductionParagraphs.map((paragraph, i) => {
@@ -123,10 +119,8 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
               {aboutContent.workParagraphs.map((workParagraph, i) => {
                 return (
                   <div className='mb-12' key={i}>
-                    <h6 className=" text-highlight sm:text-highlight font-black text-gray-800 mb-2">
-                      {workParagraph.title}
-                    </h6>
-                    <div>
+                    <Title subTitle={workParagraph.title} subTitleClass='text-highlight'/>
+                    <div className="mt-2">
                       <span>{workParagraph.body}</span>
                     </div>
                   </div>

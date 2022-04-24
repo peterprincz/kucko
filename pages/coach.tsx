@@ -1,9 +1,10 @@
 import type { GetStaticProps, NextPage } from 'next'
 import React, { useRef, useState } from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/layout/layout'
 import ListItem from '../components/list-item'
 import LIMarker from '../components/list-item'
 import Price from '../components/price'
+import Title from '../components/title'
 import { getCoachData } from '../lib/data-reader'
 import { CoachData, CoachTypeSection } from '../lib/types/data-types'
 
@@ -47,7 +48,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
     <Layout title='Rólam' activePageIndex={2}>
       <div className="max-w-full min-h-screen mx-auto  pt-9 flex flex-col bg-primary">
         <div className='flex justify-center w-100 mb-9'>
-          <h1 className=' text-big sm:text-huge font-black flex flex-col  text-gray-800'>{coachContent.coachSection.title}</h1>
+          <Title title={coachContent.coachSection.title}/>
         </div>
         <div className='px-3 md:px-6 lg:px-24'>
           {coachContent.coachSection.paragraphs.map(paragraph => {
@@ -58,7 +59,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
           <span>További információ <a href={coachContent.coachSection.link}>Wikipedia</a></span>
         </div>
         <div className='flex justify-center w-100 mb-9 mt-9'>
-          <h1 className=' text-big sm:text-huge font-black flex flex-col  text-gray-800'>Tipusok</h1>
+          <Title subTitle="Coaching tipusok"/>
         </div>
         <div className='bg-secondary min-h-screen '>
           <ul className="flex justify-evenly text-center">

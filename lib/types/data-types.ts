@@ -102,6 +102,8 @@ export type Dandelion = {
     rotate:number, 
     offsetX: number, 
     offsetY: number 
+    fadeOutTimeMS: number,
+    animationtimeS: number
 }
 
 export type Price = {

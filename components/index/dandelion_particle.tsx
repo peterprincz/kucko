@@ -1,5 +1,5 @@
 import React, { FC, Props, useEffect, useState } from 'react'
-import { Dandelion } from '../lib/types/data-types';
+import { Dandelion } from '../../lib/types/data-types';
 
 function getRndInteger(min:number, max:number):number {
     return Math.floor(Math.random() * (max - min + 1) ) + min;

@@ -1,6 +1,7 @@
 import React, { FC, useEffect } from 'react'
-import { fadeInFromBottom } from '../hooks/fades';
-import { ContactSection } from '../lib/types/data-types';
+import { fadeInFromBottom } from '../../hooks/fades';
+import { ContactSection } from '../../lib/types/data-types';
+import Title from '../title';
 
 
 const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: ContactSection, showTitle: boolean }> = ({ selfRef, content, showTitle, children }) => {
@@ -13,17 +14,13 @@ const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: Co
     });
 
     return (
-        <div className="container mx-auto px-3 md:px-6 lg:px-48  flex flex-col justify-center items-center py-8 max-w-full bg-primary min-h-[83vh]">
+        <div className="container mx-auto px-3 md:px-6 lg:px-48  flex flex-col justify-center items-center py-4 max-w-full bg-primary min-h-[83vh]">
             <div ref={selfRef} className='animate-fadeInFromBottom opacity-0'>
                 {showTitle &&
-                    <h1 className="self-baseline  uppercase text-big sm:text-huge font-black flex flex-col leading-none text-gray-800">
-                        {content.titleTop}
-                        <span className="text-big sm:text-huge">
-                            {content.titleBottom}
-                        </span>
-                    </h1>
+                <Title title={content.titleTop}/>
+
                 }
-                <div className="sm:flex flex-wrap justify-between items-center text-center gap-8 animate-fadeInFromBottom">
+                <div className="sm:flex flex-wrap justify-between items-center text-center pt-8 gap-8 animate-fadeInFromBottom">
                     {content.contactData.map((data, i) => {
                         return (
                             <div key={i} className="w-full min-w-[16em] sm:w-1/2 md:w-1/3 px-4 py-4 mt-6 bg-secondary shadow-lg rounded-lg m-auto">
