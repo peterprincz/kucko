@@ -79,11 +79,21 @@ export type CoachTypeSection = {
     introductionParagraphs: string[],
     listTitle:string,
     listItems:string[],
-    duration:string,
-    price:string,
-    priceDesc:string,
+    price:Price,
     cancellation:string
-}   
+}
+
+export type SchoolData = {
+    title:string,
+    subtitle:string,
+    paragraphs: string[],
+    linkTitle: string,
+    link: string,
+    listTitle:string,
+    listItems:string[],
+    price:Price,
+    cancellation:string,
+}
 
 export type Dandelion = {
     id:number,
@@ -92,4 +102,10 @@ export type Dandelion = {
     rotate:number, 
     offsetX: number, 
     offsetY: number 
+}
+
+export type Price = {
+    price:string,
+    duration:string,
+    priceDesc:string,
 }

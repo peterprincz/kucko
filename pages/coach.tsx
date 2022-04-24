@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react'
 import Layout from '../components/layout'
 import ListItem from '../components/list-item'
 import LIMarker from '../components/list-item'
+import Price from '../components/price'
 import { getCoachData } from '../lib/data-reader'
 import { CoachData, CoachTypeSection } from '../lib/types/data-types'
 
@@ -26,10 +27,6 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
 
   const [activeView, setActiveView] = useState(sections[0])
   const [browserCounter, setBrowserCounter] = useState(0)
-
-  const interactiveAnimationStyle: string = "animate-interactiveToSecondary"
-
-
 
   const onTopBarClick = (buttonTitle: string) => {
     setBrowserCounter(browserCounter + 1);
@@ -97,20 +94,15 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
                   return (
                     <li key={i} className='flex align-center my-3 gap-3'>
                       <ListItem>
-                      <span className='ml-4'>{listItem}</span>
+                        <span className='ml-4'>{listItem}</span>
                       </ListItem>
                     </li>
                   )
                 })}
               </ul>
-              <div className='mb-8 mt-6 flex flex-col items-center text-center bg-primary p-6 rounded-md shadow-md'>
-              <h1 className=" text-highlight  text-gray-800">
-                  {activeView.price} / {activeView.duration}
-                </h1>
-                <h1 className=" text-highlight  text-gray-800">
-                  {activeView.priceDesc}
-                </h1>
-              </div>
+              <Price price={activeView.price}>
+
+              </Price>
               {activeView.cancellation}
             </div>
           </div>
