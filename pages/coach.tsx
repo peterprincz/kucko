@@ -63,7 +63,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
           <Title subTitle="Coaching tipusok"/>
         </div>
         <div className='bg-secondary min-h-screen '>
-          <ul className="flex justify-evenly text-center">
+          <ul className="flex justify-evenly text-center border-[#dbb2b4] border-b-2">
             {sections.map(section => {
               const active = activeView.buttonName === section.buttonName;
               return (
@@ -79,7 +79,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
             })}
           </ul>
           <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py-9 flex flex-col min-h-100 transition-all	">
-            <div key={browserCounter} className='animate-fadeInFromLeft'>
+            <div key={browserCounter} className='animate-fadeInFromBottom'>
               {activeView.introductionParagraphs.map((paragraph, i) => {
                 return (
                   <p key={i}>{paragraph}</p>

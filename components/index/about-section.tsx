@@ -23,7 +23,7 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
   const dandelionRef: React.RefObject<HTMLImageElement> = useRef<HTMLImageElement>(null);
 
   let dandelionSpawnRatio = 0.4;
-  let dandelionClockSpeed = 2000;
+  let dandelionClockSpeed = 3000;
 
   useEffect(() => {
 
@@ -35,11 +35,11 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
       }
       setDandelions((stateArray) => {
         const dandelions: DandelitonParticleData[] = []
-        for (let i = 0; i < 1; i++) {
+        for (let i = 0; i < getRndInteger(1,2); i++) {
           const animationTimeS:number = getRndInteger(5,8);
           const newDandelion: DandelitonParticleData = {
             id: ++dandelionCounter,
-            xTarget: getRndInteger(600, 900),
+            xTarget: getRndInteger(600, 800),
             yTarget: getRndInteger(-400, -300),
             rotate: getRndInteger(40, 60),
             offsetX: getRndInteger(50, 100),

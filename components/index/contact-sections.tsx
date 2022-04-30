@@ -26,7 +26,7 @@ const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: Co
                 <div className="sm:flex flex-wrap justify-between items-center text-center pt-8 gap-8 animate-fadeInFromBottom">
                     {content.contactData.map((data, i) => {
                         return (
-                            <div key={i} className="w-full min-w-[16em] sm:w-1/2 md:w-1/3 px-4 py-4 mt-6 bg-secondary shadow-lg rounded-lg m-auto">
+                            <div key={i} className="w-full min-w-[16em]  sm:w-1/2 md:w-1/3 p-8 mt-6 bg-secondary shadow-lg rounded-lg m-auto">
                                 <div className="flex-shrink-0">
                                     <div className="flex items-center mx-auto justify-center h-12 w-12 rounded-md bg-active text-white">
                                         <Image src={data.img} height={26} width={26}

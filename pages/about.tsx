@@ -62,7 +62,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
     <Layout title='Rólam' activePageIndex={1}>
       <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 py-20 flex flex-col  bg-primary min-h-screen">
         <div ref={aboutContainer} className="animate-fadeInFromLeft opacity-0">
-          <Title title='Bernadett Petrovics' subTitle='Coach'/>
+          <Title title='Bernadett Petrovics'/>
           <div className='flex flex-col lg:flex-row pt-16 gap-4'>
             <div className="w-3/3 lg:w-2/3 pr-10 order-2 lg:order-1" >
               {aboutContent.introductionParagraphs.map((paragraph, i) => {
