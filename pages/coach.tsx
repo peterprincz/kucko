@@ -1,6 +1,7 @@
 import type { GetStaticProps, NextPage } from 'next'
 import React, { useRef, useState } from 'react'
 import Layout from '../components/layout/layout'
+import Link from '../components/link'
 import ListItem from '../components/list-item'
 import LIMarker from '../components/list-item'
 import Price from '../components/price'
@@ -56,7 +57,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
               <p className='mb-2'>{paragraph}</p>
             )
           })}
-          <span>További információ <a href={coachContent.coachSection.link}>Wikipedia</a></span>
+          <span>További információ <Link href={coachContent.coachSection.link} title={"Wikipedia"}/></span>
         </div>
         <div className='flex justify-center w-100 mb-9 mt-9'>
           <Title subTitle="Coaching tipusok"/>

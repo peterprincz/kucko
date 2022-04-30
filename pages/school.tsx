@@ -2,6 +2,7 @@ import type { GetStaticProps, NextPage } from 'next'
 import React from 'react'
 
 import Layout from '../components/layout/layout'
+import Link from '../components/link'
 import ListItem from '../components/list-item'
 import Price from '../components/price'
 import Title from '../components/title'
@@ -29,7 +30,7 @@ const School: NextPage<SchoolData> = (schoolData: SchoolData) => {
                                 <p className='mb-2'>{paragraph}</p>
                             )
                         })}
-                        <span>{schoolData.linkTitle}<a href={schoolData.link}>Wikipedia</a></span>
+                        <span>{schoolData.linkTitle} <Link href={schoolData.link} title={"Wikipedia"}/></span>
                     </div>
                 </div>
             </div>

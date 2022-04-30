@@ -43,15 +43,21 @@
         "titleTop": "Kapcsolat",
         "contactData": [{
                 "title": "facebook",
-                "body": "Facebook ide"
+                "body": "Facebook",
+                "bodyLink": "https://www.facebook.com/Kiskenguru-var%C3%A1zsm%C5%B1hely-%C3%A9s-l%C3%A9lekkuck%C3%B3",
+                "img": "/svg/facebook.svg"
             },
             {
                 "title": "Email",
-                "body": "Email ide"
+                "body": "ezmegaz11@gmail.com",
+                "bodyLink": "mailto: ezmegaz11@gmail.com",
+                "img": "/svg/email.svg"
             },
             {
                 "title": "Telefon",
-                "body": "Telefon ide"
+                "body": "+36 30 123 4567",
+                "bodyLink": "tel:+36301234567",
+                "img": "/svg/cellphone.svg"
             }
         ]
     }

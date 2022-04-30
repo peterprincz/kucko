@@ -30,8 +30,10 @@ export type ContactSection = {
     titleBottom: string,
     contactData: {
         title:string,
-        body:string
-    }[]
+        body:string,
+        bodyLink:string,
+        img:string
+    }[],
 }
 
 export type AboutData = {
