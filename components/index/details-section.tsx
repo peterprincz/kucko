@@ -36,7 +36,7 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
                           <div className="flex-shrink-0">
                             <ListItem>
                               <div className="ml-4">
-                                <h5 className="text-lg leading-6 text-gray-800 font-bold">
+                                <h5 className="leading-6 text-gray-800 font-bold">
                                   {parapgraph.title}
                                 </h5>
                                 <p className="mt-2 leading-6 text-gray-600">

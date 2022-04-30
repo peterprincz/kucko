@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useRef, useState } from 'react'
 import { fadeInFromLeft } from '../../hooks/fades';
-import { AboutSection, Dandelion } from '../../lib/types/data-types';
+import { AboutSection, DandelitonParticleData } from '../../lib/types/data-types';
 import Button from '../button';
 import Title from '../title';
 import DandelitonParticle from './dandelion_particle';
@@ -19,7 +19,7 @@ let dandelionCounter = 0;
 const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, scrollTwo: React.MouseEventHandler<HTMLButtonElement>, content: AboutSection }> = ({ scrollOne, scrollTwo, content, children }) => {
 
   const introRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
-  const [dandelions, setDandelions] = useState<Dandelion[]>([]);
+  const [dandelions, setDandelions] = useState<DandelitonParticleData[]>([]);
   const dandelionRef: React.RefObject<HTMLImageElement> = useRef<HTMLImageElement>(null);
 
   let dandelionSpawnRatio = 0.4;
@@ -34,22 +34,27 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
         return false;
       }
       setDandelions((stateArray) => {
-        const dandelions: Dandelion[] = []
-        for (let i = 0; i < getRndInteger(1, 2); i++) {
-          const newDandelion: Dandelion = {
+        const dandelions: DandelitonParticleData[] = []
+        for (let i = 0; i < 1; i++) {
+          const animationTimeS:number = getRndInteger(5,8);
+          const newDandelion: DandelitonParticleData = {
             id: ++dandelionCounter,
-            xTarget: getRndInteger(300, 400),
+            xTarget: getRndInteger(600, 900),
             yTarget: getRndInteger(-400, -300),
-            rotate: getRndInteger(40, 360),
-            offsetX: getRndInteger(100, 200),
-            offsetY: getRndInteger(100, 200),
-            fadeOutTimeMS: getRndInteger(5000, 7000),
-            animationtimeS: getRndInteger(6, 9)
+            rotate: getRndInteger(40, 60),
+            offsetX: getRndInteger(50, 100),
+            offsetY: getRndInteger(100, 150),
+            fadeOutTimeMS: (animationTimeS - 2) * 1000,
+            animationtimeS: animationTimeS
           }
           dandelions.push(newDandelion)
         }
         //Original array + new Array
-        const updatedArray = [...stateArray, ...dandelions];
+        let updatedArray = [...stateArray, ...dandelions];
+        //if(stateArray.length > 12){
+         // updatedArray = updatedArray.slice(updatedArray.length / 2, updatedArray.length);
+        //}
+        
         return updatedArray
       })
       /*--- Implementation here ends--- */

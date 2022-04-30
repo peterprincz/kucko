@@ -95,7 +95,7 @@ export type SchoolData = {
     cancellation:string,
 }
 
-export type Dandelion = {
+export type DandelitonParticleData = {
     id:number,
     xTarget:number, 
     yTarget:number, 

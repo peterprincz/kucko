@@ -10,36 +10,36 @@
                 "img": "/images/10.jpg",
                 "imgWidth": "482",
                 "imgHeight": "718",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
+                "labelTitle": "",
+                "labelBody": ""
             },
             {
                 "img": "/images/11.jpg",
                 "imgWidth": "482",
                 "imgHeight": "718",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
+                "labelTitle": "",
+                "labelBody": ""
             },
             {
                 "img": "/images/12.jpg",
                 "imgWidth": "482",
                 "imgHeight": "718",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
+                "labelTitle": "",
+                "labelBody": ""
             },
             {
                 "img": "/images/13.jpg",
                 "imgWidth": "482",
                 "imgHeight": "718",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
+                "labelTitle": "",
+                "labelBody": ""
             },
             {
                 "img": "/images/14.jpg",
                 "imgWidth": "482",
                 "imgHeight": "718",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
+                "labelTitle": "",
+                "labelBody": ""
             }
         ]
     },
@@ -72,22 +72,22 @@
                 "img": "/images/15.jpg",
                 "imgWidth": "718",
                 "imgHeight": "482",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
+                "labelTitle": "",
+                "labelBody": ""
             },
             {
                 "img": "/images/16.jpg",
                 "imgWidth": "718",
                 "imgHeight": "482",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
+                "labelTitle": "",
+                "labelBody": ""
             },
             {
                 "img": "/images/17.jpg",
                 "imgWidth": "718",
                 "imgHeight": "482",
-                "labelTitle": "First slide label",
-                "labelBody": "Some representative placeholder content for the first slide"
+                "labelTitle": "",
+                "labelBody": ""
             }
         ]
     }

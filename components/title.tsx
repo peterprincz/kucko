@@ -5,7 +5,7 @@ const Title: FC<{ title?: string, subTitle?: string, titleClass?: string, subTit
 ({ title, subTitle, titleClass, subTitleClass, containerClass, children }) => {
 
     const titleStyle = "text-gray-800 text-big lg:text-huge font-black flex flex-col leading-none break-words " + (titleClass ? titleClass : "");
-    const subTitleStyle = "text-gray-800 text-highlight lg:text-big font-black mt-4 leading-tight break-words " + (subTitleClass ? subTitleClass : "");
+    const subTitleStyle = "text-gray-800 text-highlight  font-black mt-4 leading-tight break-words " + (subTitleClass ? subTitleClass : "");
     const containerStyle = containerClass ? containerClass : "";
 
     return (

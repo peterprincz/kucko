@@ -119,7 +119,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
               {aboutContent.workParagraphs.map((workParagraph, i) => {
                 return (
                   <div className='mb-12' key={i}>
-                    <Title subTitle={workParagraph.title} subTitleClass='text-highlight'/>
+                    <Title subTitle={workParagraph.title}/>
                     <div className="mt-2">
                       <span>{workParagraph.body}</span>
                     </div>

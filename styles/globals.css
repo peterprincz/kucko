@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-size: 110%;
+    font-size: 1.25rem;
     overflow-x: hidden;
 }
 
@@ -37,9 +37,9 @@ rgb(175, 110, 78)
     --tw-secondary: 235 200 200;
     --tw-interactive: 175 110 78;
     --tw-active: 236 173 143;
-    --tw-fontsize-huge: 6rem;
-    --tw-fontsize-big: 3.75rem;
-    --tw-fontsize-highlight: 1.75rem;
+    --tw-fontsize-huge: 4rem;
+    --tw-fontsize-big: 3rem;
+    --tw-fontsize-highlight: 2rem;
 }
 
 
