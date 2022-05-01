@@ -6,8 +6,8 @@ const Price: FC<{ price: Price }> = ({ price, children }) => {
 
     return (
         <div className='mb-8 mt-6 flex flex-col items-center text-center '>
-            <div className='bg-white  shadow-lg rounded-lg min-w-[20rem]'>
-                <div className='py-6 px-6 bg-active text-center rounded-t-lg'>
+            <div className='bg-[#edcdcd] shadow-lg rounded-lg min-w-[20rem]'>
+                <div className='py-6 px-6 bg-[#e8dfe880] text-center rounded-t-lg'>
                     <span className=" text-highlight text-gray-800 ">
                         {price.priceDesc}
                     </span>
@@ -17,7 +17,6 @@ const Price: FC<{ price: Price }> = ({ price, children }) => {
                         <h1 className=" text-highlight font-bold ">
                             {price.price}
                         </h1>
-                        <div className='border-t-2 border-[#dbdbdb] h-1'></div>
                         <h1 className="  text-gray-800 font-bold">
                             {price.duration}
                         </h1>

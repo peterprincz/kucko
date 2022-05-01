@@ -12,12 +12,10 @@ import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/sectio
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
-
     return {
         props: getSchoolData()
     }
 }
-
 
 const School: NextPage<SchoolData> = (schoolData: SchoolData) => {
     return (
