@@ -9,7 +9,6 @@ import ListItem from '../components/list-item'
 import Title from '../components/title'
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
 
-
 export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
@@ -17,11 +16,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-
 const About: NextPage<AboutData> = (aboutContent: AboutData) => {
 
   const competencyRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
-
   const [dropDownOpen, setDropDownOpen] = useState(false)
 
   const toogleDropDown = () => {
@@ -43,9 +40,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
   const aboutContainer: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
   const workContainer: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
 
-
   useEffect(() => {
-
     const fadeInFromLeftObserver: IntersectionObserver = new IntersectionObserver(fadeInFromLeft);
     if (aboutContainer.current != null) {
       fadeInFromLeftObserver.observe(aboutContainer.current);
@@ -53,13 +48,9 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
     if (workContainer.current != null) {
       fadeInFromLeftObserver.observe(workContainer.current);
     }
-
-
   });
 
-
   return (
-
     <Layout title='Rólam' activePageIndex={1}>
       <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.ROW} height={HEIGHT.MEDIUM}>
         <div ref={aboutContainer} className="animate-fadeInFromLeft opacity-0">
@@ -80,8 +71,6 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
           </div>
         </div>
       </SectionContainer>
-
-
 
       <div className={'container max-w-full  mx-auto px-3 md:px-6 lg:px-24 bg-secondary hover:cursor-pointer'}>
         <div ref={competencyRef} className="h-16 flex items-center justify-center gap-0 lg:gap-10 cursor-pointer" onClick={toogleDropDown}>
@@ -136,8 +125,6 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
           </div>
         </div>
       </SectionContainer>
-
-
     </Layout>
   )
 }

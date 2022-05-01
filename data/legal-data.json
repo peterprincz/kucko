@@ -1,0 +1,26 @@
+[
+    {
+        "id": "legalnotice",
+        "title": "Jogi nyilatkozat",
+        "paragraphs": [
+            "Jelen honlap teljes tartalma – ideértve a honlap struktúráját, szövegezését, illetve annak grafikáját – Horváth-Petrovics Bernadett tulajdonát képezik.", 
+            "Azok másolása, illetve bármilyen módon való felhasználása még forrásmegjelölés mellett is csak a honlap tulajdonosának előzetes írásos engedélyével lehetséges. ",
+            "A honlap tulajdonosa fenntartja magának a jogot, hogy a honlap tartalmát minden előzetes értesítés nélkül megváltoztathassa. A honlap szövegezésében leírt információk tájékoztató jellegűek. A honlap tulajdonosa nem vállal felelősséget a honlap szövegezésének helytelen értelmezéséből adódó kellemetlenségek miatt."]
+    },
+    {
+        "id": "secrecy", 
+        "title": "Titoktartás",
+        "paragraphs": [
+            "Titoktartási kötelezettségemnél fogva bizalmasan kezelem az összes olyan információt, személyes adatot, valamint jegyzeteket, és az egyéb írásbeli dokumentumokat kizárólag a coaching folyamat céljaira használom fel és harmadik személy tudomására nem hozom.",
+            "Titoktartási kötelezettségem mind a folyamat során, mind annak lezárultával fennáll.", 
+            "Valamint a coach köteles, saját jegyzeteit és a számára átadott írásos anyagokat az adatvédelmi szabályzatban (GDPR) foglaltaknak megfelelően úgy őrzi meg, hogy az harmadik személy számára nem válik hozzáférhetővé."]
+    },
+    {
+        "id": "privacystatement", 
+        "title": "Titoktartás",
+        "paragraphs": [
+            "Titoktartási kötelezettségemnél fogva bizalmasan kezelem az összes olyan információt, személyes adatot, valamint jegyzeteket, és az egyéb írásbeli dokumentumokat kizárólag a coaching folyamat céljaira használom fel és harmadik személy tudomására nem hozom.",
+            "Titoktartási kötelezettségem mind a folyamat során, mind annak lezárultával fennáll.", 
+            "Valamint a coach köteles, saját jegyzeteit és a számára átadott írásos anyagokat az adatvédelmi szabályzatban (GDPR) foglaltaknak megfelelően úgy őrzi meg, hogy az harmadik személy számára nem válik hozzáférhetővé."]
+    }
+]

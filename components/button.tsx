@@ -1,8 +1,6 @@
 import React, { FC } from 'react'
 
-
 const Button: FC<{ onClick?: React.MouseEventHandler, title: string, outlined?: boolean, className?:string }> = ({ onClick, title, outlined, className, children }) => {
-
 
     if (!outlined) {
         return (

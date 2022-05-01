@@ -17,7 +17,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-
 const Home: NextPage<IndexData> = (indexContent: IndexData) => {
 
   const detailsRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
@@ -31,6 +30,7 @@ const Home: NextPage<IndexData> = (indexContent: IndexData) => {
       
     }
   };
+  
   const scrollToDetails = () => {
     if (detailsRef.current !== null) {
       const y = detailsRef.current.getBoundingClientRect().top + window.pageYOffset + -100;

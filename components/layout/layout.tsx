@@ -4,11 +4,13 @@ import React, { FC } from 'react'
 import Footer from './footer';
 import NavBar from './navbar';
 
-
-const Layout: FC<{ title: string, activePageIndex: number }> = ({ children, title, activePageIndex }) => {
+const Layout: FC<{ title: string, activePageIndex: number, disableJsPlugin?:boolean }> = ({ children, title, activePageIndex, disableJsPlugin }) => {
+    if(!disableJsPlugin){
+        disableJsPlugin = false;
+    }
     return (
         <div>
-            <Script src='index.min.js'/>
+            {disableJsPlugin ? <></>:  <Script src='index.min.js'/>}
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />

@@ -2,7 +2,6 @@ import { FC } from 'react'
 
 const ListItem: FC = ({ children }) => {
 
-    /*hover:animate-slowSpin*/
     return (
         <div className='flex items-center'>
             <div className="w-5  h-7 overflow-hidden inline-block">

@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { AboutData, CoachData, IndexData, SchoolData } from './types/data-types'
+import { AboutData, CoachData, IndexData, LegalData, SchoolData } from './types/data-types'
 
 const dataDirectory:string = path.join(process.cwd(), "data")
 
@@ -15,7 +15,6 @@ export function getIndexData():IndexData {
   return indexData;
 }
 
-
 export function getAboutData():AboutData {
   const aboutData:AboutData = readJson("about-data");
   return aboutData;
@@ -29,4 +28,13 @@ export function getCoachData():CoachData {
 export function getSchoolData():SchoolData {
   const SchoolData:SchoolData = readJson("school-data");
   return SchoolData;
+}
+
+export function getLegalData(id:string):LegalData {
+  const LegalDatas:LegalData[] = readJson("legal-data");
+  let legalData:LegalData|undefined = LegalDatas.find(x => x.id === id);
+  if(!legalData){
+    legalData = LegalDatas[0];
+  }
+  return legalData;
 }

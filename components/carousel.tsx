@@ -1,12 +1,9 @@
-import React, { FC, Props } from 'react'
+import React, { FC } from 'react'
 import { CarouselEntry } from '../lib/types/data-types';
 import Image from 'next/image'
 
-
-
 const Carousel: FC<{ id:string, images: CarouselEntry[] }> = ({ id, images, children }) => {
     
-
     //TODO should find the maximum width
     const maxWidth:number = images[0].imgWidth;
     const containerStyle = "carousel slide relative flex-column"

@@ -1,11 +1,10 @@
 import React, { FC } from 'react'
 
-
 const Title: FC<{ title?: string, subTitle?: string, titleClass?: string, subTitleClass?: string, containerClass?: string}> = 
 ({ title, subTitle, titleClass, subTitleClass, containerClass, children }) => {
 
-    const titleStyle = "text-gray-800 text-big lg:text-huge font-black flex flex-col leading-none break-words " + (titleClass ? titleClass : "");
-    const subTitleStyle = "text-gray-800 text-highlight  font-black mt-4 leading-tight break-words " + (subTitleClass ? subTitleClass : "");
+    const titleStyle = "text-gray-800 text-big lg:text-huge font-black flex flex-col leading-none break-words font-cursive " + (titleClass ? titleClass : "");
+    const subTitleStyle = "text-gray-800 text-highlight  font-black mt-4 leading-tight break-words font-cursive " + (subTitleClass ? subTitleClass : "");
     const containerStyle = containerClass ? containerClass : "";
 
     return (
@@ -24,7 +23,6 @@ const Title: FC<{ title?: string, subTitle?: string, titleClass?: string, subTit
             )}
         </div>
     );
-        
 }
 
 export default Title

@@ -1,13 +1,7 @@
-import React, { FC, Props, useEffect, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import { DandelitonParticleData } from '../../lib/types/data-types';
 
-function getRndInteger(min:number, max:number):number {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
-  }
-  
-
 const DandelitonParticle: FC<DandelitonParticleData> = ({ xTarget, yTarget, rotate, offsetX, offsetY,fadeOutTimeMS, animationtimeS, children }) => {
-
 
     const animationDef = "translate(" + xTarget+ "px, "+ yTarget + "px) rotate(" + rotate + "deg)";
     const [transform, setTransfrom] = useState("");
@@ -27,8 +21,6 @@ const DandelitonParticle: FC<DandelitonParticleData> = ({ xTarget, yTarget, rota
         return () => {
         };
     }, []);
-
-
 
     return (
         <img style={{

@@ -1,6 +1,5 @@
 import React, { FC, Props, useRef, useEffect } from 'react'
 
-
 const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) => {
 
   const grayStyle = "hover:text-interactive flex items-center px-3  rounded-md font-medium transition-colors duration-500";
@@ -8,7 +7,6 @@ const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) 
 
   const getNavDivStyle = (index: number) => {
     if (activePageIndex === index) {
-      //return "";
       return 'flex items-center text-center border-active border-b-4'
     } else {
       return 'flex items-center text-center border-interactive border-b-4'
@@ -44,15 +42,13 @@ const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) 
   ]
 
   useEffect(() => {
-    const navRef: React.RefObject<HTMLDivElement> = pages[activePageIndex].ref;
-    if (navRef.current) {
-      navRef.current.scrollIntoView();
-      const x = navRef.current.getBoundingClientRect().right;
-      console.log("scrolling to x")
+    const navRef = pages[activePageIndex];
+    if (navRef && navRef.ref && navRef.ref.current) {
+      navRef.ref.current.scrollIntoView();
+      const x = navRef.ref.current.getBoundingClientRect().right;
       window.scrollTo({ left: x, behavior: 'smooth' });
     }
   }, []);
-
 
   return (
     <nav className="w-full bg-white shadow sticky top-0 z-50">
@@ -69,7 +65,6 @@ const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) 
           })}
         </div>
       </div>
-
     </nav>
   )
 }

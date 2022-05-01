@@ -24,7 +24,6 @@ export type DetailsSection = {
     image:string;
 }
 
-
 export type ContactSection = {
     titleTop: string,
     titleBottom: string,
@@ -112,4 +111,10 @@ export type Price = {
     price:string,
     duration:string,
     priceDesc:string,
+}
+
+export type LegalData = {
+    id:string,
+    title:string,
+    paragraphs:string[]
 }

@@ -26,8 +26,6 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
     coachContent.teenagerCoachingSection,
     coachContent.parentCoachingSection
   ]
-
-
   const [activeView, setActiveView] = useState(sections[0])
   const [browserCounter, setBrowserCounter] = useState(0)
 
@@ -42,11 +40,9 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
       return;
     }
     setActiveView(section);
-
   }
 
   return (
-
     <Layout title='Rólam' activePageIndex={2}>
       <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.COLUMN} height={HEIGHT.FULL}>
         <div className='animate-fadeInFromLeft'>
@@ -61,8 +57,8 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
           <span>További információ <Link href={coachContent.coachSection.link} title={"Wikipedia"} /></span>
         </div>
         <div className='flex justify-center w-100 mb-9 mt-9'>
-          <Title subTitle="Coaching tipusok" />
-        </div>
+          <Title title="Coaching tipusok" />
+        </div>  
         <div className='bg-secondary min-h-screen animate-fadeInFromBottom'>
           <ul className="flex justify-evenly text-center border-[#dbb2b4] border-b-2">
             {sections.map(section => {
@@ -111,7 +107,6 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
           </div>
         </div>
       </SectionContainer>
-
     </Layout>
   )
 }

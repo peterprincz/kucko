@@ -1,12 +1,8 @@
 import { FC } from 'react'
 import { Price } from '../lib/types/data-types'
 import Button from './button';
-import Title from './title';
-
-
 
 const Price: FC<{ price: Price }> = ({ price, children }) => {
-
 
     return (
         <div className='mb-8 mt-6 flex flex-col items-center text-center '>

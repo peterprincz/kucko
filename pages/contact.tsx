@@ -1,14 +1,10 @@
-  import type { GetStaticProps, NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import React from 'react'
 import { useRef } from 'react'
-import AboutSection from '../components/index/about-section'
 import ContactSection from '../components/index/contact-sections'
-import DetailsSection from '../components/index/details-section'
 import Layout from '../components/layout/layout'
-import Wave from '../components/index/wave'
 import { getIndexData } from '../lib/data-reader'
 import { IndexData } from '../lib/types/data-types'
-import Title from '../components/title'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -18,9 +14,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-
 const Home: NextPage<IndexData> = (indexContent: IndexData) => {
-  
 const contactRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
 
   return (

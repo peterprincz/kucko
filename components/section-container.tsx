@@ -2,7 +2,8 @@ import { FC } from 'react'
 
 export enum BACKGROUND {
     PRIMARY,
-    SECONDARY
+    SECONDARY,
+    WHITE
 }
 
 export enum FLEX {
@@ -17,7 +18,13 @@ export enum HEIGHT {
 
 const SectionContainer: FC<{background:BACKGROUND, flex:FLEX, height:HEIGHT}> = ({ background, flex, height, children }) => {
 
-    const backgroundColor:string = background === BACKGROUND.PRIMARY ? " bg-primary": " bg-secondary";
+    let backgroundColor:string;
+    switch(background){
+        case BACKGROUND.PRIMARY:  backgroundColor = " bg-primary";break;
+        case BACKGROUND.SECONDARY:  backgroundColor = " bg-secondary";break;
+        case BACKGROUND.WHITE:  backgroundColor = " bg-white";break;
+        default: backgroundColor = " bg-white";break;
+    }
     const flexStyle:string = flex === FLEX.ROW ? " flex" : " flex-col justify-center items-center";
     const minHeight:string = height === HEIGHT.FULL ? " min-h-[93vh]" : " min-h-[83vh]"
 

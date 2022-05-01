@@ -2,12 +2,9 @@ import React, { FC, useEffect } from 'react'
 import { fadeInFromBottom } from '../../hooks/fades';
 import { ContactSection } from '../../lib/types/data-types';
 import Image from 'next/image'
-
 import Title from '../title';
 import Link from '../link';
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT }  from '../section-container'
-
-
 
 const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: ContactSection, showTitle: boolean }> = ({ selfRef, content, showTitle, children }) => {
 
@@ -39,7 +36,7 @@ const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: Co
                                 </div>
 
                                 <p className="text-md  text-gray-600 py-4">
-                                    <Link href={data.bodyLink} title={data.body}/>
+                                    <Link target="_blank" href={data.bodyLink} title={data.body}/>
                                 </p>
                             </div>
                         )
@@ -47,8 +44,6 @@ const ContactSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: Co
                 </div>
             </div>
         </SectionContainer>
-
-
     )
 }
 

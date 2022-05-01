@@ -10,11 +10,6 @@ function getRndInteger(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function xsaasd(min: number, max: number): number {
-  return 51505;
-}
-
-
 let dandelionCounter = 0;
 
 const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, scrollTwo: React.MouseEventHandler<HTMLButtonElement>, content: AboutSection }> = ({ scrollOne, scrollTwo, content, children }) => {
@@ -29,8 +24,6 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
   useEffect(() => {
 
     setInterval(() => {
-
-      /*--- Implementation here begins--- */
       if (Math.random() < dandelionSpawnRatio) {
         return false;
       }
@@ -50,15 +43,12 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
           }
           dandelions.push(newDandelion)
         }
-        //Original array + new Array
         let updatedArray = [...stateArray, ...dandelions];
-        //if(stateArray.length > 12){
-        // updatedArray = updatedArray.slice(updatedArray.length / 2, updatedArray.length);
-        //}
-
+        if(stateArray.length > 12){
+         updatedArray = updatedArray.slice(updatedArray.length / 2, updatedArray.length);
+        }
         return updatedArray
       })
-      /*--- Implementation here ends--- */
     },
       dandelionClockSpeed)
   }, []);
