@@ -54,7 +54,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
               <p className='mb-2'>{paragraph}</p>
             )
           })}
-          <span>További információ <Link href={coachContent.coachSection.link} title={"Wikipedia"} /></span>
+          <span>{coachContent.coachSection.linkSpan}<Link href={coachContent.coachSection.link} title={"Wikipedia"} /></span>
         </div>
         <div className='flex justify-center w-100 mb-9 mt-9'>
           <Title title="Coaching tipusok" />

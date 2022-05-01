@@ -1,4 +1,5 @@
 @tailwind base;
+
 html {
     scroll-behavior: smooth;
 }
@@ -7,27 +8,6 @@ body {
     font-size: 1.25rem;
     overflow-x: hidden;
 }
-
-
-/*
-rgb(56,144,143)
-rgb(178,235,224)
-rgb(94,150,174)
-rgb(255,191,163)
-rgb(224,137,99)
-rgb(42, 217, 207)
-
-
-
-
-
-rgb(210, 163, 169)
-rgb(230, 220, 229)
-rgb(235, 195, 193)
-rgb(236, 173, 143)
-rgb(175, 110, 78)
-
-*/
 
 :root {
     --tw-bg-opacity: 0.9;
@@ -45,68 +25,86 @@ rgb(175, 110, 78)
     --tw-fontsize-highlight: 1.75rem;
 }
 
-
-
 @tailwind components;
 @tailwind utilities;
+
 @layer utilities {
     .text-huge {
         font-size: var(--tw-fontsize-huge);
     }
+
     .text-big {
         font-size: var(--tw-fontsize-big);
     }
+
     .text-highlight {
         font-size: var(--tw-fontsize-highlight);
     }
+
     .bg-white {
         background-color: rgb(var(--tw-white) / var(--tw-bg-opacity));
     }
+
     .bg-primary {
         background-color: rgb(var(--tw-primary) / var(--tw-bg-opacity));
     }
+
     .bg-secondary {
         background-color: rgb(var(--tw-secondary) / var(--tw-bg-opacity));
     }
+
     .bg-interactive {
         background-color: rgb(var(--tw-interactive) / var(--tw-bg-opacity));
     }
+
     .bg-active {
         background-color: rgb(var(--tw-active) / var(--tw-bg-opacity));
     }
+
     .button-interactive {
         background-color: rgb(var(--tw-interactive));
     }
+
     .text-active {
         color: rgb(var(--tw-active) / var(--tw-bg-opacity));
     }
+
     .text-interactive {
         color: rgb(var(--tw-interactive) / var(--tw-bg-opacity));
     }
+
     .text-link {
         color: rgb(var(--tw-link) / var(--tw-bg-opacity));
     }
+
     .border-active {
         border-color: rgb(var(--tw-active) / var(--tw-border-opacity));
     }
+
     .border-primary {
         border-color: rgb(var(--tw-primary) / var(--tw-border-opacity));
     }
+
     .border-secondary {
         border-color: rgb(var(--tw-secondary) / var(--tw-border-opacity));
     }
+
     .border-interactive {
         border-color: rgb(var(--tw-interactive) / var(--tw-border-opacity));
     }
+
     .button-active {
         background-color: rgb(var(--tw-active));
     }
+
     .filter-grayscale {
         filter: grayscale(100%);
     }
+
     .fill-primary {
         fill: #e8dfe8;
     }
+
     .fill-secondary {
         fill: #edcdcd;
     }

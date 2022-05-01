@@ -31,7 +31,6 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
         if (competencyRef.current != null) {
           const y = competencyRef.current.getBoundingClientRect().top + window.pageYOffset + -70;
           window.scrollTo({ top: y, behavior: 'smooth' });
-          //competencyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
       }, 400);
     }
@@ -74,7 +73,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
 
       <div className={'container max-w-full  mx-auto px-3 md:px-6 lg:px-24 bg-secondary hover:cursor-pointer'}>
         <div ref={competencyRef} className="h-16 flex items-center justify-center gap-0 lg:gap-10 cursor-pointer" onClick={toogleDropDown}>
-          <h1 className=" text-highlightxl sm:text-highlight font-black flex flex-col  text-gray-800">SZAKMAI KOMPETENCIÁIM</h1>
+          <h1 className=" text-highlightxl sm:text-highlight font-black flex flex-col  text-gray-800">{aboutContent.competencyTitle}</h1>
           <div className={"rounded-full flex items-center justify-center w-12 h-12 " + (dropDownOpen ? ' ' : 'mt-2 animate-bounce')}>
             <img src='/svg/arrow.svg' className={"transition-all " + (dropDownOpen ? "rotate-[270deg]" : 'rotate-90')}></img>
           </div>
