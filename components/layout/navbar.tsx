@@ -1,55 +1,75 @@
-import React, { FC, Props } from 'react'
+import React, { FC, Props, useRef, useEffect } from 'react'
 
 
 const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) => {
 
-  const grayStyle = "hover:text-interactive px-3 py-2 rounded-md font-medium transition-colors duration-500";
-  const activeStyle = "text-active  px-3 py-2 rounded-md  font-medium";
+  const grayStyle = "hover:text-interactive flex items-center px-3  rounded-md font-medium transition-colors duration-500";
+  const activeStyle = "text-active  px-3  rounded-md  font-medium";
 
-  const getNavDivStyle = (index:number) => {
-    if(activePageIndex === index){
+  const getNavDivStyle = (index: number) => {
+    if (activePageIndex === index) {
+      //return "";
       return 'flex items-center text-center border-active border-b-4'
     } else {
       return 'flex items-center text-center border-interactive border-b-4'
     }
   }
 
-  return (
-    <nav className="w-full bg-white shadow sticky top-0 z-50 min-h-[7vh]">
-      <div>
-        <div className="flex items-center  justify-center h-16 w-full">
-          <div className=" flex items-center justify-center  overflow-x-auto w-100">
-            <div className="flex items-strech  max-w-full">
-              <div className={getNavDivStyle(0)}>
-                <a className={activePageIndex === 0 ? activeStyle : grayStyle} href="/#">
-                  Főoldal
-                </a>
-              </div>
-              <div className={getNavDivStyle(1)}>
-                <a className={activePageIndex === 1 ? activeStyle : grayStyle} href="/about">
-                  Rólam
-                </a>
-              </div>
-              <div className={getNavDivStyle(2)}>
-                <a className={activePageIndex === 2 ? activeStyle : grayStyle} href="/coach">
-                  Coaching
-                </a>
-              </div>
-              <div className={getNavDivStyle(3)}>
-                <a className={activePageIndex === 3 ? activeStyle : grayStyle} href="/school">
-                  Iskola előkészitő
-                </a>
-              </div>
-              <div className={getNavDivStyle(4)}>
-                <a className={activePageIndex === 4 ? activeStyle : grayStyle} href="/contact">
-                  Kapcsolat
-                </a>
-              </div>
-            </div>
-          </div>
+  const pages = [
+    {
+      title: "Főoldal",
+      href: "/#",
+      ref: useRef<HTMLDivElement>(null)
+    },
+    {
+      title: "Rólam",
+      href: "/about",
+      ref: useRef<HTMLDivElement>(null)
+    },
+    {
+      title: "Coaching",
+      href: "/coach",
+      ref: useRef<HTMLDivElement>(null)
+    },
+    {
+      title: "Iskola előkésztő",
+      href: "/school",
+      ref: useRef<HTMLDivElement>(null)
+    },
+    {
+      title: "Kapcsolat",
+      href: "/contact",
+      ref: useRef<HTMLDivElement>(null)
+    }
+  ]
 
+  useEffect(() => {
+    const navRef: React.RefObject<HTMLDivElement> = pages[activePageIndex].ref;
+    if (navRef.current) {
+      navRef.current.scrollIntoView();
+      const x = navRef.current.getBoundingClientRect().right;
+      console.log("scrolling to x")
+      window.scrollTo({ left: x, behavior: 'smooth' });
+    }
+  }, []);
+
+
+  return (
+    <nav className="w-full bg-white shadow sticky top-0 z-50">
+      <div className="flex items-strech justify-center h-full min-h-[7vh] overflow-x-auto w-100">
+        <div  className="flex items-strech  max-w-full">
+          {pages.map((page, i) => {
+            return (
+              <div key={i} ref={page.ref} className={getNavDivStyle(i)}>
+                <a className={activePageIndex === i ? activeStyle : grayStyle} href={page.href}>
+                  {page.title}
+                </a>
+              </div>
+            )
+          })}
         </div>
       </div>
+
     </nav>
   )
 }

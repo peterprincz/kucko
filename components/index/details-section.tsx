@@ -3,6 +3,8 @@ import { fadeInFromRight } from '../../hooks/fades';
 import { DetailsSection } from '../../lib/types/data-types';
 import ListItem from '../list-item';
 import Title from '../title';
+import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../section-container'
+
 
 
 
@@ -20,14 +22,14 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
   });
 
   return (
-    <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-6 lg:py-20 flex py-20 max-w-full bg-secondary min-h-[90vh]">
+    <SectionContainer background={BACKGROUND.SECONDARY} flex={FLEX.ROW} height={HEIGHT.FULL}>
       <div className={sectionContentStyle + " animate-fadeInFromRight opacity-0 grow"} ref={selfRef} >
-        <Title title={content.titleTop} subTitle={content.titleBottom}/>
+        <Title title={content.titleTop} subTitle={content.titleBottom} />
         <div className='flex flex-col md:flex-row justify-around mt-20'>
           {content.sides.map((side, i) => {
             return (
               <div key={i}>
-                <Title subTitle={side.title}/>
+                <Title subTitle={side.title} />
                 <ul className="mt-10">
                   {side.paragraphs.map((parapgraph, i) => {
                     return (
@@ -55,8 +57,7 @@ const DetailsSection: FC<{ selfRef: React.RefObject<HTMLDivElement>, content: De
           })}
         </div>
       </div>
-    </div>
-
+    </SectionContainer>
   )
 }
 

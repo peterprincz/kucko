@@ -7,6 +7,7 @@ import { AboutData } from '../lib/types/data-types'
 import { fadeInFromLeft } from '../hooks/fades';
 import ListItem from '../components/list-item'
 import Title from '../components/title'
+import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -32,7 +33,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
       setTimeout(() => {
         if (competencyRef.current != null) {
           const y = competencyRef.current.getBoundingClientRect().top + window.pageYOffset + -70;
-          window.scrollTo({top: y, behavior: 'smooth'});
+          window.scrollTo({ top: y, behavior: 'smooth' });
           //competencyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
       }, 400);
@@ -60,9 +61,9 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
   return (
 
     <Layout title='Rólam' activePageIndex={1}>
-      <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 py-20 flex flex-col  bg-primary min-h-screen">
+      <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.ROW} height={HEIGHT.MEDIUM}>
         <div ref={aboutContainer} className="animate-fadeInFromLeft opacity-0">
-          <Title title='Bernadett Petrovics'/>
+          <Title title='Bernadett Petrovics' />
           <div className='flex flex-col lg:flex-row pt-16 gap-4'>
             <div className="w-3/3 lg:w-2/3 pr-10 order-2 lg:order-1" >
               {aboutContent.introductionParagraphs.map((paragraph, i) => {
@@ -78,7 +79,10 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
             </div>
           </div>
         </div>
-      </div>
+      </SectionContainer>
+
+
+
       <div className={'container max-w-full  mx-auto px-3 md:px-6 lg:px-24 bg-secondary hover:cursor-pointer'}>
         <div ref={competencyRef} className="h-16 flex items-center justify-center gap-0 lg:gap-10 cursor-pointer" onClick={toogleDropDown}>
           <h1 className=" text-highlightxl sm:text-highlight font-black flex flex-col  text-gray-800">SZAKMAI KOMPETENCIÁIM</h1>
@@ -90,7 +94,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
         <div className={"transition-all duration-1000	 overflow-hidden " + (dropDownOpen ? 'max-h-[120rem] scale-100' : "max-h-0 scale-0")}>
           <ul className='mb-6 list-disc'>
             {aboutContent.competencies.map((competency, i, arr) => {
-              if (i ===  0) {
+              if (i === 0) {
                 return (
                   <li id="asd" key={i} className="p-4 ">
                     <ListItem>
@@ -109,7 +113,8 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
           </ul>
         </div>
       </div>
-      <div className="container mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 flex flex-col pt-16 max-w-full bg-primary">
+
+      <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.ROW} height={HEIGHT.MEDIUM}>
         <div ref={workContainer} className="animate-fadeInFromLeft opacity-0">
           <div className='flex flex-col lg:flex-row pt-16 gap-4'>
             <div className="w-3/3 lg:w-1/3 flex items-center justify-center" >
@@ -119,7 +124,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
               {aboutContent.workParagraphs.map((workParagraph, i) => {
                 return (
                   <div className='mb-12' key={i}>
-                    <Title subTitle={workParagraph.title}/>
+                    <Title subTitle={workParagraph.title} />
                     <div className="mt-2">
                       <span>{workParagraph.body}</span>
                     </div>
@@ -130,7 +135,8 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
 
           </div>
         </div>
-      </div>
+      </SectionContainer>
+
 
     </Layout>
   )

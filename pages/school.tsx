@@ -8,6 +8,7 @@ import Price from '../components/price'
 import Title from '../components/title'
 import { getSchoolData } from '../lib/data-reader'
 import { SchoolData } from '../lib/types/data-types'
+import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -21,21 +22,21 @@ export const getStaticProps: GetStaticProps = async (context) => {
 const School: NextPage<SchoolData> = (schoolData: SchoolData) => {
     return (
         <Layout title='Iskola előkészitő' activePageIndex={3}>
-            <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 py-20 flex flex-col  bg-primary min-h-screen">
+            <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.ROW} height={HEIGHT.FULL}>
                 <div className="animate-fadeInFromLeft opacity-0">
-                    <Title title={schoolData.title} subTitle={schoolData.subtitle}/>
+                    <Title title={schoolData.title} subTitle={schoolData.subtitle} />
                     <div className='py-3 md:py-6 lg:py-12'>
                         {schoolData.paragraphs.map(paragraph => {
                             return (
                                 <p className='mb-2'>{paragraph}</p>
                             )
                         })}
-                        <span>{schoolData.linkTitle} <Link href={schoolData.link} title={"Wikipedia"}/></span>
+                        <span>{schoolData.linkTitle} <Link href={schoolData.link} title={"Wikipedia"} /></span>
                     </div>
                 </div>
-            </div>
-            <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py:3 md:py-20 lg:py-20 py-20 flex flex-col  bg-secondary min-h-screen">
-                <Title subTitle={schoolData.listTitle}/>
+            </SectionContainer>
+            <SectionContainer background={BACKGROUND.SECONDARY} flex={FLEX.COLUMN} height={HEIGHT.MEDIUM}>
+                <Title subTitle={schoolData.listTitle} />
                 <ul className='my-6 list-disc'>
                     {schoolData.listItems.map((item, i, arr) => {
                         return (
@@ -50,7 +51,7 @@ const School: NextPage<SchoolData> = (schoolData: SchoolData) => {
                     })}
                 </ul>
                 <Price price={schoolData.price} />
-            </div>
+            </SectionContainer>
         </Layout>
     )
 }

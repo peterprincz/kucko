@@ -3,11 +3,12 @@ import React, { useRef, useState } from 'react'
 import Layout from '../components/layout/layout'
 import Link from '../components/link'
 import ListItem from '../components/list-item'
-import LIMarker from '../components/list-item'
 import Price from '../components/price'
 import Title from '../components/title'
 import { getCoachData } from '../lib/data-reader'
 import { CoachData, CoachTypeSection } from '../lib/types/data-types'
+import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
+
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -47,22 +48,22 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
   return (
 
     <Layout title='Rólam' activePageIndex={2}>
-      <div className="max-w-full min-h-screen mx-auto  pt-9 flex flex-col bg-primary">
-        <div className='flex justify-center w-100 mb-9'>
-          <Title title={coachContent.coachSection.title}/>
-        </div>
-        <div className='px-3 md:px-6 lg:px-24'>
+      <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.COLUMN} height={HEIGHT.FULL}>
+        <div className='animate-fadeInFromLeft'>
+          <div className='flex justify-center w-100 mb-9'>
+            <Title title={coachContent.coachSection.title} />
+          </div>
           {coachContent.coachSection.paragraphs.map(paragraph => {
             return (
               <p className='mb-2'>{paragraph}</p>
             )
           })}
-          <span>További információ <Link href={coachContent.coachSection.link} title={"Wikipedia"}/></span>
+          <span>További információ <Link href={coachContent.coachSection.link} title={"Wikipedia"} /></span>
         </div>
         <div className='flex justify-center w-100 mb-9 mt-9'>
-          <Title subTitle="Coaching tipusok"/>
+          <Title subTitle="Coaching tipusok" />
         </div>
-        <div className='bg-secondary min-h-screen '>
+        <div className='bg-secondary min-h-screen animate-fadeInFromBottom'>
           <ul className="flex justify-evenly text-center border-[#dbb2b4] border-b-2">
             {sections.map(section => {
               const active = activeView.buttonName === section.buttonName;
@@ -78,7 +79,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
               )
             })}
           </ul>
-          <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py-9 flex flex-col min-h-100 transition-all	">
+          <div className="container max-w-full mx-auto px-3 md:px-6 lg:px-24 py-9 flex flex-col min-h-100 transition-all shadow-lg rounded-lg	">
             <div key={browserCounter} className='animate-fadeInFromBottom'>
               {activeView.introductionParagraphs.map((paragraph, i) => {
                 return (
@@ -109,7 +110,8 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
             </div>
           </div>
         </div>
-      </div>
+      </SectionContainer>
+
     </Layout>
   )
 }

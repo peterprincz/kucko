@@ -4,6 +4,7 @@ import { AboutSection, DandelitonParticleData } from '../../lib/types/data-types
 import Button from '../button';
 import Title from '../title';
 import DandelitonParticle from './dandelion_particle';
+import SectionContainer, { BACKGROUND, FLEX, HEIGHT }  from '../section-container'
 
 function getRndInteger(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -35,8 +36,8 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
       }
       setDandelions((stateArray) => {
         const dandelions: DandelitonParticleData[] = []
-        for (let i = 0; i < getRndInteger(1,2); i++) {
-          const animationTimeS:number = getRndInteger(5,8);
+        for (let i = 0; i < getRndInteger(1, 2); i++) {
+          const animationTimeS: number = getRndInteger(5, 8);
           const newDandelion: DandelitonParticleData = {
             id: ++dandelionCounter,
             xTarget: getRndInteger(600, 800),
@@ -52,9 +53,9 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
         //Original array + new Array
         let updatedArray = [...stateArray, ...dandelions];
         //if(stateArray.length > 12){
-         // updatedArray = updatedArray.slice(updatedArray.length / 2, updatedArray.length);
+        // updatedArray = updatedArray.slice(updatedArray.length / 2, updatedArray.length);
         //}
-        
+
         return updatedArray
       })
       /*--- Implementation here ends--- */
@@ -70,7 +71,7 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
   });
 
   return (
-    <div className="container px-3 md:px-6 lg:px-24 py:3 md:py-6 lg:py-20 flex py-20 max-w-full bg-primary min-h-[90vh]">
+    <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.ROW} height={HEIGHT.MEDIUM}>
       <div ref={introRef} className="lg:w-3/5 flex flex-col  min-w-0 animate-fadeInFromLeft opacity-0 mr-6 break-words">
         <Title title={content.titleTop} titleClass="font-cursive" subTitle={content.titleBottom} containerClass='mb-24' />
         {content.paragraphs.map((paragraph, i) => {
@@ -84,7 +85,7 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
           <Button outlined={true}
             onClick={scrollTwo}
             title="Tovább olvasok"
-            />
+          />
           <Button outlined={false}
             onClick={scrollOne}
             title="Kapcsolat" />
@@ -96,11 +97,8 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
         {dandelions.map(dandelion => {
           return (<DandelitonParticle key={dandelion.id} {...dandelion} />)
         })}
-
-
       </div>
-    </div>
-
+    </SectionContainer>
   )
 }
 
