@@ -18,18 +18,19 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
   const [dandelions, setDandelions] = useState<DandelitonParticleData[]>([]);
   const dandelionRef: React.RefObject<HTMLImageElement> = useRef<HTMLImageElement>(null);
 
-  let dandelionSpawnRatio = 0.4;
+  let dandelionSpawnRatio = 0.7;
+  let dandelionDoubleSpawnRation = 1;
   let dandelionClockSpeed = 3000;
 
   useEffect(() => {
 
     setInterval(() => {
-      if (Math.random() < dandelionSpawnRatio) {
+      if (Math.random() > dandelionSpawnRatio) {
         return false;
       }
       setDandelions((stateArray) => {
         const dandelions: DandelitonParticleData[] = []
-        for (let i = 0; i < getRndInteger(1, 2); i++) {
+        for (let i = 0; i < (Math.random() > dandelionDoubleSpawnRation ? 2 : 1); i++) {
           const animationTimeS: number = getRndInteger(5, 8);
           const newDandelion: DandelitonParticleData = {
             id: ++dandelionCounter,

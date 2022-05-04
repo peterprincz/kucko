@@ -14,7 +14,6 @@ export async function getStaticPaths() {
     paths: [
       { params: { document: 'legalnotice' } },
       { params: { document: 'secrecy' } },
-      { params: { document: 'privacystatement' } },
     ],
     fallback: true // false or 'blocking'
   };

@@ -7,7 +7,7 @@ const Price: FC<{ price: Price }> = ({ price, children }) => {
     return (
         <div className='mb-8 mt-6 flex flex-col items-center text-center '>
             <div className='bg-[#edcdcd] shadow-lg rounded-lg min-w-[20rem]'>
-                <div className='py-6 px-6 bg-[#e8dfe880] text-center rounded-t-lg'>
+                <div className='py-6 px-6 bg-[#b6785ba1] text-center rounded-t-lg'>
                     <span className=" text-highlight text-gray-800 ">
                         {price.priceDesc}
                     </span>
