@@ -8,6 +8,7 @@ import { fadeInFromLeft } from '../hooks/fades';
 import ListItem from '../components/list-item'
 import Title from '../components/title'
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
+import TextBlock from '../components/text-block'
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
@@ -53,13 +54,13 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
     <Layout title='Rólam' activePageIndex={1}>
       <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.ROW} height={HEIGHT.MEDIUM}>
         <div ref={aboutContainer} className="animate-fadeInFromLeft opacity-0">
-          <Title title='Bernadett Petrovics' />
+          <Title title={aboutContent.title} />
           <div className='flex flex-col lg:flex-row pt-16 gap-4'>
             <div className="w-3/3 lg:w-2/3 pr-10 order-2 lg:order-1" >
               {aboutContent.introductionParagraphs.map((paragraph, i) => {
                 return (
                   <div key={i} className="mb-8">
-                    <span>{paragraph}</span>
+                    <TextBlock text={paragraph}/>
                   </div>
                 )
               })}
@@ -84,7 +85,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
             {aboutContent.competencies.map((competency, i, arr) => {
               if (i === 0) {
                 return (
-                  <li id="asd" key={i} className="p-4 ">
+                  <li  key={i} className="p-4 ">
                     <ListItem>
                       <span className='ml-4'>
                         {competency}
@@ -114,7 +115,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
                   <div className='mb-12' key={i}>
                     <Title subTitle={workParagraph.title} />
                     <div className="mt-2">
-                      <span>{workParagraph.body}</span>
+                    <TextBlock text={workParagraph.body}/>
                     </div>
                   </div>
                 )

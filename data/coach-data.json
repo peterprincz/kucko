@@ -2,14 +2,11 @@
     "coachSection": {
         "title": "Coaching",
         "paragraphs": [
-            "A coaching, a coach és az ügyfél között módszertani eszközök felhasználásával zajló, beszélgetési folyamat, melyben az ügyfél találja meg saját részére a legjobb megoldási alternatívákat.",
-            "A coach és az ügyfél kapcsolata a bizalomra épül, és a titoktartás jellemzi. A coaching folyamatot a jövőorientáltság jellemzi. Nem a múlt sérelmeit boncolgatja. A munka a jelenben folyik",
-            "A cél a problémák és konfliktusok megszűntetése, és a megoldások gyors elősegítése „itt és most”. A coach abban segít, hogy az ügyfél végig tudjon menni a saját maga által fontosnak tartott, az úgynevezett „változás útján”.",
-            "Képes legyen döntést hozni, és elérje a kitűzött céljait úgy, hogy közben mindvégig támogatja őt a coach. A coach soha nem dolgozik az ügyfél helyett, hanem partnerként maximálisan támogatja őt a folyamatában, tiszteletben tartva annak döntéseit. Nem kínál kész megoldásokat, hanem figyelembe véve az ügyfél egyéni adottságait, tulajdonságait, belső erőforrásait, maximális figyelemmel, odafordulással, empátiával segít, valamint a folyamat során kérdésekkel, visszajelzésekkel, educatióval igyekszik utat mutatni és támogatni a fejlődést.",
-            "Viszont fontosnak tartom leírni, hogy a coaching nem pszichoterápia, nem diagnosztizálok és nem folytatok gyógyító tevékenységet sem!",
-            "Az egészséges, de bizonyos nehézségekkel, elakadásokkal, problémákkal küzdő, vagy csak Önmagukat egyes területeken fejleszteni kívánó emberek segítése."
+            "A coaching, a coach és az ügyfél között módszertani eszközök felhasználásával zajló, beszélgetési folyamat, melyben az ügyfél találja meg saját részére a legjobb megoldási alternatívákat. A coach és az ügyfél kapcsolata a bizalomra épül, és a titoktartás jellemzi. A coaching folyamatot a jövőorientáltság jellemzi. Nem a múlt sérelmeit boncolgatja. A munka a jelenben folyik.",
+            "A cél a problémák és konfliktusok megszűntetése, és a megoldások gyors elősegítése „itt és most”. A coach abban segít, hogy az ügyfél végig tudjon menni a saját maga által fontosnak tartott, az úgynevezett „változás útján”. Képes legyen döntést hozni, és elérje a kitűzött céljait úgy, hogy közben mindvégig támogatja őt a coach. A coach soha nem dolgozik az ügyfél helyett, hanem partnerként maximálisan támogatja őt a folyamatában, tiszteletben tartva annak döntéseit. Nem kínál kész megoldásokat, hanem figyelembe véve az ügyfél egyéni adottságait, tulajdonságait, belső erőforrásait, maximális figyelemmel, odafordulással, empátiával segít, valamint a folyamat során kérdésekkel, visszajelzésekkel, educatióval igyekszik utat mutatni és támogatni a fejlődést.",
+            "Viszont fontosnak tartom leírni, hogy a coaching nem pszichoterápia, nem diagnosztizálok és nem folytatok gyógyító tevékenységet sem! Az egészséges, de bizonyos nehézségekkel, elakadásokkal, problémákkal küzdő, vagy csak Önmagukat egyes területeken fejleszteni kívánó emberek segítése."
         ],
-        "linkSpan": "További információk",
+        "linkSpan": "További információk: ",
         "link": "https://hu.wikipedia.org/wiki/Coaching"
     },
     "childCoachingSection": {
@@ -32,7 +29,7 @@
             "Ha a saját reakcióit szeretné megérteni…"
         ],
         "price": {
-            "duration": "45 perc",
+            "duration": "Alkalom",
             "price": "10.000 Ft.",
             "priceDesc": "Gyermek coaching"
         }
@@ -57,14 +54,14 @@
             "Vagy bezárkózik, otthon ülő típus (nincsenek barátai)."
         ],
         "price": {
-            "duration": "60 perc",
+            "duration": "Alkalom",
             "price": "11.500 Ft.",
             "priceDesc": "Kamasz Coaching"
         }
 
     },
     "parentCoachingSection": {
-        "buttonName": "Felnött",
+        "buttonName": "Felnött/Szülő",
         "title": "Szülőknek, felnőtteknek szóló konzultációk",
         "introductionParagraphs": [
             "Senki sem mondta, hogy könnyű szülőnek lenni. Minden szülő a lehető legjobbat szeretné gyermekének. A gyermekek tudatos nevelése rendkívül fontos, hiszen nem csak befolyásolja, de meg is határozza későbbi életüket és személyiségüket is. Ez maximálisan felelősségteljes és nehéz feladat. A harmónikus szülő-gyermek kapcsolat alapja a szeretet, a kölcsönös tisztelet, a bizalom, és a megfelelő családi légkör kialakítása. A szülők és gyermekek között szinte mindennaposak a kisebb-nagyobb konfliktusok. Sok olyan élethelyzet van, amikor a szülő tanácstalan, mivel is tenné a legjobbat gyermekének, mennyire legyen engedékeny illetve szigorú, vagy éppen hogyan is terelgesse a helyesnek vélt út felé.",
@@ -89,7 +86,7 @@
             "Kamasz gyermeke van és tanácstalannak érzi magát?"
         ],
         "price": {
-            "duration": "70-90 perc",
+            "duration": "Alkalom",
             "price": "15.000 Ft.",
             "priceDesc": "Szülői konzultáció"
         }

@@ -5,6 +5,7 @@ import Button from '../button';
 import Title from '../title';
 import DandelitonParticle from './dandelion_particle';
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT }  from '../section-container'
+import TextBlock from '../text-block';
 
 function getRndInteger(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -63,13 +64,13 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
 
   return (
     <SectionContainer background={BACKGROUND.PRIMARY} flex={FLEX.ROW} height={HEIGHT.MEDIUM}>
-      <div ref={introRef} className="lg:w-3/5 flex flex-col  min-w-0 animate-fadeInFromLeft opacity-0 mr-6 break-words">
+      <div ref={introRef} className="lg:w-3/5 flex flex-col  min-w-0 animate-fadeInFromLeft opacity-0  break-words">
         <Title title={content.titleTop} titleClass="font-cursive" subTitle={content.titleBottom} containerClass='mb-24' />
         {content.paragraphs.map((paragraph, i) => {
           return (
-            <p className="text-left text-gray-800 mb-4" key={i}>
-              {paragraph}
-            </p>
+            <div key={i} className='mt-4'>
+              <TextBlock text={paragraph}/>
+            </div>
           )
         })}
         <div className="md:flex-row mt-8">

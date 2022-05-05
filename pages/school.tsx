@@ -9,6 +9,7 @@ import Title from '../components/title'
 import { getSchoolData } from '../lib/data-reader'
 import { SchoolData } from '../lib/types/data-types'
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
+import TextBlock from '../components/text-block'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -26,7 +27,9 @@ const School: NextPage<SchoolData> = (schoolData: SchoolData) => {
                     <div className='py-3 md:py-6 lg:py-12'>
                         {schoolData.paragraphs.map(paragraph => {
                             return (
-                                <p className='mb-2'>{paragraph}</p>
+                                <div className='mt-4'>
+                                    <TextBlock text={paragraph}/>
+                                </div>
                             )
                         })}
                         <span>{schoolData.linkTitle} <Link href={schoolData.link} title={"Wikipedia"} /></span>
