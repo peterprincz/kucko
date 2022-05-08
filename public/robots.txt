@@ -1,0 +1,4 @@
+Sitemap: https://xn--vmh-llekkuck-feb1m.hu/sitemap.xml
+User-agent: *
+Allow: /*
+Disallow: /api/*
