@@ -8,6 +8,7 @@ import Title from '../components/title'
 import { getCoachData } from '../lib/data-reader'
 import { CoachData, CoachTypeSection } from '../lib/types/data-types'
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
+import TextBlock from '../components/text-block'
 
 
 
@@ -51,7 +52,9 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
           </div>
           {coachContent.coachSection.paragraphs.map(paragraph => {
             return (
-              <p className='mb-2'>{paragraph}</p>
+              <div className='mt-2'>
+                <TextBlock text={paragraph}/>
+              </div>
             )
           })}
           <span>{coachContent.coachSection.linkSpan}<Link href={coachContent.coachSection.link} title={"Wikipedia"} /></span>
@@ -79,7 +82,9 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
             <div key={browserCounter} className='animate-fadeInFromBottom'>
               {activeView.introductionParagraphs.map((paragraph, i) => {
                 return (
-                  <p key={i}>{paragraph}</p>
+                  <div key={i} className='mt-2'>
+                    <TextBlock key={i} text={paragraph}/>
+                  </div>
                 )
               })}
               <div className='mb-8 mt-6'>
