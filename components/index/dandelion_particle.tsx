@@ -1,6 +1,5 @@
 import React, { FC, useEffect, useState } from 'react'
 import { DandelitonParticleData } from '../../lib/types/data-types';
-import Image from 'next/image'
 
 const DandelitonParticle: FC<DandelitonParticleData> = ({ xTarget, yTarget, rotate, offsetX, offsetY,fadeOutTimeMS, animationtimeS, children }) => {
 
@@ -10,13 +9,10 @@ const DandelitonParticle: FC<DandelitonParticleData> = ({ xTarget, yTarget, rota
 
     useEffect(() => {
         setTimeout(() => {
-            console.log("fading in")
             setTransfrom(animationDef);
             setOpacity(1)
         }, 400);
         setTimeout(() => {
-            console.log(fadeOutTimeMS)
-            console.log("fading out")
             setOpacity(0)
         }, fadeOutTimeMS)
         return () => {
@@ -24,9 +20,8 @@ const DandelitonParticle: FC<DandelitonParticleData> = ({ xTarget, yTarget, rota
     }, []);
 
     return (
-        <Image 
-        width={48}
-        height={83}
+        <img 
+
         style={{
             transform: transform,
             transition: "opacity 4s  ease-in-out, transform " + animationtimeS +"s ease-in-out",
