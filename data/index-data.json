@@ -44,19 +44,19 @@
         "contactData": [{
                 "title": "facebook",
                 "body": "Facebook",
-                "bodyLink": "https://www.facebook.com/Kiskenguru-var%C3%A1zsm%C5%B1hely-%C3%A9s-l%C3%A9lekkuck%C3%B3",
+                "bodyLink": "https://www.facebook.com/Kiskenguru-var%C3%A1zsm%C5%B1hely-%C3%A9s-l%C3%A9lekkuck%C3%B3-106948438661632/",
                 "img": "/svg/facebook.svg"
             },
             {
                 "title": "Email",
-                "body": "ezmegaz11@gmail.com",
-                "bodyLink": "mailto: ezmegaz11@gmail.com",
+                "body": "kiskenguru@vmh-lélekkuckó.hu",
+                "bodyLink": "mailto: kiskenguru@vmh-lélekkuckó.hu",
                 "img": "/svg/email.svg"
             },
             {
                 "title": "Telefon",
-                "body": "+36 30 123 4567",
-                "bodyLink": "tel:+36301234567",
+                "body": "+36 30 503 8630",
+                "bodyLink": "tel:+36305038630",
                 "img": "/svg/cellphone.svg"
             }
         ]

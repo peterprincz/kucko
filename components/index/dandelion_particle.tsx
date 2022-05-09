@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useState } from 'react'
 import { DandelitonParticleData } from '../../lib/types/data-types';
+import Image from 'next/image'
 
 const DandelitonParticle: FC<DandelitonParticleData> = ({ xTarget, yTarget, rotate, offsetX, offsetY,fadeOutTimeMS, animationtimeS, children }) => {
 
@@ -23,7 +24,10 @@ const DandelitonParticle: FC<DandelitonParticleData> = ({ xTarget, yTarget, rota
     }, []);
 
     return (
-        <img style={{
+        <Image 
+        width={48}
+        height={83}
+        style={{
             transform: transform,
             transition: "opacity 4s  ease-in-out, transform " + animationtimeS +"s ease-in-out",
             opacity: opacity,

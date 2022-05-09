@@ -14,6 +14,9 @@ const Layout: FC<{ title: string, activePageIndex: number, disableJsPlugin?:bool
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+                <meta lang="en"/>
+                <meta name = "Description" content='Gyermek és ifjúsági szellemi-lelki tanácsadás, coaching és iskolaelőkészítő foglalkozások'/>
+                <meta name='robots' content='all'/>
                 <Script src="/tw-elements/dist/js/index.min.js" />    
                 <title>{title}</title>
             </Head>

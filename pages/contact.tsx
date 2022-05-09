@@ -18,7 +18,7 @@ const Home: NextPage<IndexData> = (indexContent: IndexData) => {
 const contactRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
 
   return (
-    <Layout title='Kezdőlap' activePageIndex={4}>
+    <Layout title='Kapcsolat' activePageIndex={4}>
       <div className="flex w-full">
         <ContactSection showTitle={true} selfRef={contactRef} content={indexContent.contactSection} />
       </div>

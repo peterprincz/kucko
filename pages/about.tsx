@@ -9,6 +9,8 @@ import ListItem from '../components/list-item'
 import Title from '../components/title'
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
 import TextBlock from '../components/text-block'
+import Image from 'next/image'
+
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
@@ -56,7 +58,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
         <div ref={aboutContainer} className="animate-fadeInFromLeft opacity-0">
           <Title title={aboutContent.title} />
           <div className='flex flex-col lg:flex-row pt-16 gap-4'>
-            <div className="w-3/3 lg:w-2/3 pr-10 order-2 lg:order-1" >
+            <div className="w-3/3 lg:w-2/3 order-2 lg:order-1" >
               {aboutContent.introductionParagraphs.map((paragraph, i) => {
                 return (
                   <div key={i} className="mb-8">
@@ -76,7 +78,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
         <div ref={competencyRef} className="h-16 flex items-center justify-center gap-0 lg:gap-10 cursor-pointer" onClick={toogleDropDown}>
           <h1 className=" text-highlightxl sm:text-highlight font-black flex flex-col  text-gray-800">{aboutContent.competencyTitle}</h1>
           <div className={"rounded-full flex items-center justify-center w-12 h-12 " + (dropDownOpen ? ' ' : 'mt-2 animate-bounce')}>
-            <img src='/svg/arrow.svg' className={"transition-all " + (dropDownOpen ? "rotate-[270deg]" : 'rotate-90')}></img>
+            <Image width={40} height={40} src='/svg/arrow.svg' className={"transition-all " + (dropDownOpen ? "rotate-[270deg]" : 'rotate-90')}></Image>
           </div>
         </div>
 
@@ -109,7 +111,7 @@ const About: NextPage<AboutData> = (aboutContent: AboutData) => {
             <div className="w-3/3 lg:w-1/3 flex items-center justify-center" >
               <Carousel id="carousel2" images={aboutContent.workCarouselData.entries} />
             </div>
-            <div className="w-3/3 lg:w-2/3 pr-10" >
+            <div className="w-3/3 lg:w-2/3 " >
               {aboutContent.workParagraphs.map((workParagraph, i) => {
                 return (
                   <div className='mb-12' key={i}>

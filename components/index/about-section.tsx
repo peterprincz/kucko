@@ -6,6 +6,8 @@ import Title from '../title';
 import DandelitonParticle from './dandelion_particle';
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT }  from '../section-container'
 import TextBlock from '../text-block';
+import Image from 'next/image'
+
 
 function getRndInteger(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -17,7 +19,6 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
 
   const introRef: React.RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
   const [dandelions, setDandelions] = useState<DandelitonParticleData[]>([]);
-  const dandelionRef: React.RefObject<HTMLImageElement> = useRef<HTMLImageElement>(null);
 
   let dandelionSpawnRatio = 0.7;
   let dandelionDoubleSpawnRation = 1;
@@ -84,8 +85,7 @@ const AboutSection: FC<{ scrollOne: React.MouseEventHandler<HTMLButtonElement>, 
         </div>
       </div>
       <div className="hidden lg:flex lg:w-2/5 px-2 items-center">
-        <img src={content.image} ref={dandelionRef} className="" />
-
+        <Image src={content.image} height={421} width={297} className="" />
         {dandelions.map(dandelion => {
           return (<DandelitonParticle key={dandelion.id} {...dandelion} />)
         })}
