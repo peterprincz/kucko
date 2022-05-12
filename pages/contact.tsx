@@ -10,7 +10,8 @@ import driveFileHandler from '../lib/drive-reader'
 export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
-    props: driveFileHandler.getIndexData()
+    props: await driveFileHandler.getIndexData(),
+    revalidate: 180
   }
 }
 

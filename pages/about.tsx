@@ -16,7 +16,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const aboutData = await driveFileHandler.getAboutData();
   return {
-    props: aboutData
+    props: aboutData,
+    revalidate: 180
   }
 }
 
