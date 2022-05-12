@@ -4,6 +4,8 @@ import { AboutData, CoachData, IndexData, SchoolData } from './types/data-types'
 import * as fallbackDataReader from './data-reader'
 import { GaxiosResponse } from 'gaxios';
 import fs from 'fs'
+import path from 'path'
+
 
 
 class DriveFileHandler {
@@ -26,7 +28,7 @@ class DriveFileHandler {
 
     constructor(){
         try {
-            this.credentials = JSON.parse(fs.readFileSync(process.cwd() + "./credentials.json", { encoding: 'utf8', flag: 'r' }));
+            this.credentials = JSON.parse(fs.readFileSync(path.join(process.cwd(), "credentials.json"), { encoding: 'utf8', flag: 'r' }));
         } catch(err){
             console.error(err)
             this.credentials = null;
