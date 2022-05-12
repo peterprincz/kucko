@@ -3,14 +3,14 @@ import React from 'react'
 import { useRef } from 'react'
 import ContactSection from '../components/index/contact-sections'
 import Layout from '../components/layout/layout'
-import { getIndexData } from '../lib/data-reader'
 import { IndexData } from '../lib/types/data-types'
+import driveFileHandler from '../lib/drive-reader'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
-    props: getIndexData()
+    props: driveFileHandler.getIndexData()
   }
 }
 

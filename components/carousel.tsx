@@ -53,7 +53,7 @@ const Carousel: FC<{ id:string, images: CarouselEntry[] }> = ({ id, images, chil
                     } else {
                         return (
                             <div key={i} className="carousel-item relative float-left w-full">
-                                <Image src={image.img} height={image.imgHeight} priority={true} width={image.imgWidth} 
+                                <Image src={image.img} height={image.imgHeight} priority={false} width={image.imgWidth} 
                                     className="block w-full h-full"
                                     alt="..."
                                 />

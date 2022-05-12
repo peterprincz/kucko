@@ -2,7 +2,6 @@ import type { GetStaticProps, NextPage } from 'next'
 import React, { useEffect, useRef, useState } from 'react'
 import Carousel from '../components/carousel'
 import Layout from '../components/layout/layout'
-import { getAboutData } from '../lib/data-reader'
 import { AboutData } from '../lib/types/data-types'
 import { fadeInFromLeft } from '../hooks/fades';
 import ListItem from '../components/list-item'
@@ -10,12 +9,14 @@ import Title from '../components/title'
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
 import TextBlock from '../components/text-block'
 import Image from 'next/image'
+import driveFileHandler from '../lib/drive-reader'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
+  const aboutData = await driveFileHandler.getAboutData();
   return {
-    props: getAboutData()
+    props: aboutData
   }
 }
 

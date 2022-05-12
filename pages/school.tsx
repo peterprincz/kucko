@@ -6,15 +6,15 @@ import Link from '../components/link'
 import ListItem from '../components/list-item'
 import Price from '../components/price'
 import Title from '../components/title'
-import { getSchoolData } from '../lib/data-reader'
 import { SchoolData } from '../lib/types/data-types'
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
 import TextBlock from '../components/text-block'
+import driveFileHandler from '../lib/drive-reader'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
     return {
-        props: getSchoolData()
+        props: await driveFileHandler.getSchoolData()
     }
 }
 

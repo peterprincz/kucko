@@ -21,7 +21,6 @@ const DandelitonParticle: FC<DandelitonParticleData> = ({ xTarget, yTarget, rota
 
     return (
         <img 
-
         style={{
             transform: transform,
             transition: "opacity 4s  ease-in-out, transform " + animationtimeS +"s ease-in-out",

@@ -8,10 +8,12 @@ import Layout from '../components/layout/layout'
 import Wave from '../components/index/wave'
 import { getIndexData } from '../lib/data-reader'
 import { IndexData } from '../lib/types/data-types'
+import DriveFileHandler from '../lib/drive-reader'
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
+  DriveFileHandler.getAboutData();
   return {
     props: getIndexData()
   }

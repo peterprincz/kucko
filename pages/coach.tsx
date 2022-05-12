@@ -5,17 +5,17 @@ import Link from '../components/link'
 import ListItem from '../components/list-item'
 import Price from '../components/price'
 import Title from '../components/title'
-import { getCoachData } from '../lib/data-reader'
 import { CoachData, CoachTypeSection } from '../lib/types/data-types'
 import SectionContainer, { BACKGROUND, FLEX, HEIGHT } from '../components/section-container';
 import TextBlock from '../components/text-block'
+import driveFileHandler from '../lib/drive-reader'
 
 
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
   return {
-    props: getCoachData()
+    props: await driveFileHandler.getCoachData()
   }
 }
 
@@ -50,9 +50,9 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
           <div className='flex justify-center w-100 mb-9'>
             <Title title={coachContent.coachSection.title} />
           </div>
-          {coachContent.coachSection.paragraphs.map(paragraph => {
+          {coachContent.coachSection.paragraphs.map((paragraph, i) => {
             return (
-              <div className='mt-2'>
+              <div key={i}  className='mt-2'>
                 <TextBlock text={paragraph}/>
               </div>
             )
@@ -64,7 +64,7 @@ const Coach: NextPage<CoachData> = (coachContent: CoachData) => {
         </div>  
         <div className='bg-secondary min-h-screen animate-fadeInFromBottom'>
           <ul className="flex justify-evenly text-center border-[#dbb2b4] border-b-2">
-            {sections.map(section => {
+            {sections.map((section) => {
               const active = activeView.buttonName === section.buttonName;
               return (
                 <li onClick={() => onTopBarClick(section.buttonName)} key={section.buttonName} className={
