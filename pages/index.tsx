@@ -14,7 +14,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   
   return {
-    props: await DriveFileHandler.getAboutData(),
+    props: await DriveFileHandler.getIndexData(),
     revalidate: 180
   }
 }

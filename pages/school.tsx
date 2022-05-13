@@ -1,6 +1,5 @@
 import type { GetStaticProps, NextPage } from 'next'
 import React from 'react'
-
 import Layout from '../components/layout/layout'
 import Link from '../components/link'
 import ListItem from '../components/list-item'
