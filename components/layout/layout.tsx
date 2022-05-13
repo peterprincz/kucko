@@ -13,6 +13,7 @@ const Layout: FC<{ title: string, activePageIndex: number, disableJsPlugin?:bool
             {disableJsPlugin ? <></>:  <Script src='index.min.js'/>}
             <Head>
                 <Script src="/tw-elements/dist/js/index.min.js" />    
+                <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
                 <title>{title}</title>
             </Head>
             <NavBar activePageIndex={activePageIndex} />
