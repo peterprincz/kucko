@@ -9,10 +9,10 @@ const Footer: FC = () => {
             <div className="max-w-screen-xl mx-auto px-4">
                 <ul className="max-w-screen-md mx-auto font-light flex flex-wrap justify-center gap-8">
                     <li className="my-2">
-                        <Link href="/legal/legalnotice" title='Jogi Nyilatkozat' />
+                        <Link href="/jog/legalnotice" title='Jogi Nyilatkozat' />
                     </li>
                     <li className="my-2">
-                        <Link href="/legal/secrecy" title='Titoktartás' />
+                        <Link href="/jog/secrecy" title='Titoktartás' />
                     </li>
                 </ul>
             </div>
