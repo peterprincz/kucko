@@ -16,12 +16,12 @@ const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) 
   const pages = [
     {
       title: "Főoldal",
-      href: "/#",
+      href: "/",
       ref: useRef<HTMLDivElement>(null)
     },
     {
       title: "Rólam",
-      href: "/about",
+      href: "/rolam",
       ref: useRef<HTMLDivElement>(null)
     },
     {
@@ -31,12 +31,12 @@ const NavBar: FC<{ activePageIndex: number }> = ({ children, activePageIndex }) 
     },
     {
       title: "Iskola előkésztő",
-      href: "/school",
+      href: "/iskola",
       ref: useRef<HTMLDivElement>(null)
     },
     {
       title: "Kapcsolat",
-      href: "/contact",
+      href: "/kapcsolat",
       ref: useRef<HTMLDivElement>(null)
     }
   ]

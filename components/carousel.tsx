@@ -7,6 +7,7 @@ const Carousel: FC<{ id:string, images: CarouselEntry[] }> = ({ id, images, chil
     //TODO should find the maximum width
     const maxWidth:number = images[0].imgWidth;
     const containerStyle = "carousel slide relative flex-column"
+    
     return (
         <div id={id} className={containerStyle} style={{maxWidth: maxWidth + "px"}} data-bs-ride="carousel">
             <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
@@ -53,7 +54,7 @@ const Carousel: FC<{ id:string, images: CarouselEntry[] }> = ({ id, images, chil
                     } else {
                         return (
                             <div key={i} className="carousel-item relative float-left w-full">
-                                <Image src={image.img} height={image.imgHeight} priority={false} width={image.imgWidth} 
+                                <Image src={image.img} height={image.imgHeight} priority={true} width={image.imgWidth} 
                                     className="block w-full h-full"
                                     alt="..."
                                 />
