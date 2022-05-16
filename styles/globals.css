@@ -1,5 +1,10 @@
 @tailwind base;
 
+@font-face {
+    font-family: "handwriting";
+    src: url("../public/fonts/hand.TTF");
+}
+
 html {
     scroll-behavior: smooth;
 }

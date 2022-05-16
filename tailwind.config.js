@@ -6,7 +6,7 @@ module.exports = {
     ],
     theme: {
         fontFamily: {
-            'cursive': ['Lucida Handwriting']
+            'cursive': ['handwriting']
         },
         extend: {
             animation: {

@@ -14,12 +14,13 @@ const Price: FC<{ price: Price }> = ({ price, children }) => {
                 </div>
                 <div className='pt-12'>
                     <div className='mb-6'>
-                        <h1 className=" text-highlight font-bold ">
+                        <p className=" text-highlight font-bold">
                             {price.price}
-                        </h1>
-                        <h1 className="  text-gray-800 font-bold">
+                        </p>
+                    
+                        <p className="  text-gray-800 font-bold">
                             {price.duration}
-                        </h1>
+                        </p>
                     </div>
                     <div className='mb-6'>
                         <a href='/contact'>
