@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "handwriting";
-    src: url("../public/fonts/hand.TTF");
+    src: url("../public/fonts/hand.ttf");
 }
 
 html {
