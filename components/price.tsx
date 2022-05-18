@@ -13,12 +13,12 @@ const Price: FC<{ price: Price }> = ({ price, children }) => {
                     </span>
                 </div>
                 <div className='pt-12'>
-                    <div className='mb-6'>
-                        <p className=" text-highlight font-bold">
+                    <div className='mb-6 flex flex-col md:flex-row justify-center items-center'>
+                        <p className="text-highlight font-bold">
                             {price.price}
                         </p>
-                    
-                        <p className="  text-gray-800 font-bold">
+                        <p className='hidden md:block text-highlight mx-2 font-bold'> / </p>                    
+                        <p className="text-highlight font-bold">
                             {price.duration}
                         </p>
                     </div>
